@@ -1,0 +1,16 @@
+---
+import { profile } from '../data/profile';
+interface Props { flagLabel: string; }
+const { flagLabel } = Astro.props;
+---
+<div class="gm-flag">
+  {profile.flagships.map((f, i) => (
+    <article class={`gm-tile rv d${(i % 2) + 1}`}>
+      <span class="tag">{f.tag} · {flagLabel}</span>
+      <h4>{f.name}</h4>
+      <div class="stack">{f.stack}</div>
+      <p>{f.detail}</p>
+      <ul>{f.metrics.map((m) => <li>{m}</li>)}</ul>
+    </article>
+  ))}
+</div>

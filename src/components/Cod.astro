@@ -1,0 +1,209 @@
+---
+import { profile } from '../data/profile';
+import { THEMES } from '../lib/themes';
+import { WORDMARKS } from '../lib/wordmarks';
+import AboutBlock from './AboutBlock.astro';
+import ContactBlock from './ContactBlock.astro';
+import FooterBlock from './FooterBlock.astro';
+
+const t = THEMES.cod;
+---
+<div id="gm-boot" data-theme="cod" data-dur="2000" style="background:#0b0c0e">
+  <div class="cod-boot">
+    <div class="cod-boot-txt">DEPLOYING<span class="cod-dots">…</span></div>
+    <div class="cod-depbar"><i></i></div>
+    <div class="cod-coords" id="codCoords"></div>
+  </div>
+</div>
+
+<div class="fx cod-grid" id="codGrid" aria-hidden="true"></div>
+<div class="fx cod-scan" aria-hidden="true"></div>
+<div class="fx cod-grain" aria-hidden="true"></div>
+<div class="fx cod-rain" aria-hidden="true"></div>
+<div class="fx cod-tracers" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<main class="cod-wrap">
+  <section class="cod-file">
+    <div class="cod-file-head">
+      <span class="cod-redact">■■■■■■</span>
+      <span class="cod-classified">OPERATOR FILE · CLASSIFIED</span>
+      <span class="cod-redact">■■■</span>
+    </div>
+
+    <div class="cod-radar" aria-hidden="true">
+      <div class="cod-radar-sweep"></div>
+      <span class="cod-blip b1"></span><span class="cod-blip b2"></span><span class="cod-blip b3"></span>
+      <div class="cod-radar-ring"></div>
+    </div>
+
+    <p class="cod-kicker rv">CALLSIGN</p>
+    <div class="cod-wordmark rv" set:html={WORDMARKS.cod}></div>
+    <p class="cod-banner rv">{t.copy.banner} · CLASS: FULL-STACK MARKETER</p>
+    <p class="cod-lede rv">{t.copy.lede}</p>
+
+    <div class="cod-killstreak rv">KILLSTREAK ⚡ TEAM-OF-ONE</div>
+    <div class="cod-stats">
+      {profile.heroStats.map((s) => (
+        <div class="cod-stat rv">
+          <div class="v">{s.value}{s.selfReported && <span class="cod-star">*</span>}</div>
+          <div class="l">{s.label}</div>
+        </div>
+      ))}
+    </div>
+    <div class="cod-cta rv">
+      <button class="cod-btn" id="codDeploy" type="button">{t.copy.cta1}</button>
+      <a class="cod-btn ghost" href={`mailto:${profile.identity.contact.email}`}>{t.copy.cta2}</a>
+    </div>
+  </section>
+
+  <h2 class="cod-h2 rv" id="cod-missions">[ {t.copy.teamTitle} ]</h2>
+  <div class="cod-missions">
+    {profile.team.map((m, i) => (
+      <article class="cod-tag rv" style={`--w:${m.level}%`} data-hot>
+        <span class="cod-br tl"></span><span class="cod-br tr"></span><span class="cod-br bl"></span><span class="cod-br br"></span>
+        <div class="cod-tag-head"><span class="cod-complete">MISSION COMPLETE ✓</span><span class="cod-callsign">#{String(i + 1).padStart(2, '0')}</span></div>
+        <div class="cod-role">{m.role}</div>
+        <h3>{m.headline}{m.selfReported && <span class="cod-star">*</span>}</h3>
+        <p>{m.detail}</p>
+        <div class="cod-xp"><div class="cod-xp-l"><span>XP</span><b>{m.metric} {m.metricLabel}</b></div><div class="cod-xp-bar"><i></i></div></div>
+      </article>
+    ))}
+  </div>
+
+  <h2 class="cod-h2 rv">[ {t.copy.flagTitle} ]</h2>
+  <div class="cod-ops">
+    {profile.flagships.map((f, i) => (
+      <article class="cod-op rv" data-hot>
+        <span class="cod-br tl"></span><span class="cod-br tr"></span><span class="cod-br bl"></span><span class="cod-br br"></span>
+        <div class="cod-op-head"><span class="cod-op-check">OP ✓</span><span class="cod-op-score">SCORE +{(i + 1) * 250}</span></div>
+        <h4>{f.name}</h4>
+        <div class="cod-stack">{f.stack}</div>
+        <p>{f.detail}</p>
+        <ul>{f.metrics.map((x) => <li>{x}</li>)}</ul>
+      </article>
+    ))}
+  </div>
+
+  <AboutBlock /><ContactBlock /><FooterBlock />
+</main>
+
+<style is:global>
+  [data-theme="cod"] body { background: #141518; }
+  [data-theme="cod"] .gm-section-title { display: none; }
+
+  /* boot */
+  .cod-boot { text-align: center; font-family: 'Share Tech Mono', monospace; }
+  .cod-boot-txt { font-family: 'Saira Stencil One', sans-serif; color: #FF7A00; font-size: clamp(22px, 5vw, 40px); letter-spacing: .12em; text-shadow: 0 0 20px rgba(255,122,0,.6); }
+  .cod-dots::after { content: ""; }
+  .cod-depbar { width: min(440px, 74vw); height: 10px; background: #201d18; border: 1px solid #4a3a22; margin: 20px auto 12px; overflow: hidden; }
+  .cod-depbar i { display: block; height: 100%; width: 0; background: #FF7A00; box-shadow: 0 0 12px #FF7A00; animation: gm-bar 1.7s cubic-bezier(.5,.1,.3,1) forwards; }
+  @keyframes gm-bar { to { width: 100%; } }
+  .cod-coords { color: #8FA31E; font-size: 12px; letter-spacing: .1em; min-height: 16px; }
+
+  /* fx layers */
+  .cod-grid { z-index: 0; background:
+      linear-gradient(rgba(143,163,30,.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(143,163,30,.07) 1px, transparent 1px);
+    background-size: 40px 40px; will-change: transform; }
+  .cod-scan { z-index: 1; background: repeating-linear-gradient(0deg, rgba(0,0,0,.16) 0 1px, transparent 1px 3px); mix-blend-mode: multiply; }
+  .cod-grain { z-index: 1; opacity: .06; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  .cod-rain { z-index: 1; opacity: .35;
+    background-image: repeating-linear-gradient(102deg, transparent 0 22px, rgba(180,190,170,.14) 22px 23px);
+    background-size: 100px 100%; animation: gm-rain .5s linear infinite; }
+  @keyframes gm-rain { to { background-position: -60px 260px; } }
+  .cod-tracers { z-index: 1; overflow: hidden; }
+  .cod-tracers span { position: absolute; width: 180px; height: 2px; background: linear-gradient(90deg, transparent, #FF7A00, #fff); box-shadow: 0 0 8px #FF7A00; opacity: 0; }
+  .cod-tracers span:nth-child(1) { top: 22%; animation: gm-tracer 3.4s linear infinite; }
+  .cod-tracers span:nth-child(2) { top: 54%; animation: gm-tracer 4.2s linear .8s infinite; }
+  .cod-tracers span:nth-child(3) { top: 76%; animation: gm-tracer 3s linear 1.6s infinite; }
+  @keyframes gm-tracer { 0% { left: -200px; opacity: 0; } 10% { opacity: 1; } 60% { opacity: 1; } 100% { left: 110%; opacity: 0; } }
+
+  .cod-wrap { max-width: 1160px; margin: 0 auto; padding: 78px 22px 120px; position: relative; z-index: 2; }
+  .cod-file { position: relative; border: 1px solid #33362e; border-left: 3px solid #FF7A00; background: rgba(20,21,24,.7); padding: 26px clamp(18px, 4vw, 34px) 30px; }
+  .cod-file-head { display: flex; align-items: center; gap: 12px; font-family: 'Share Tech Mono', monospace; margin-bottom: 16px; }
+  .cod-redact { background: #2a2d26; color: #2a2d26; letter-spacing: -1px; user-select: none; }
+  .cod-classified { color: #8FA31E; font-size: 11px; letter-spacing: .22em; }
+  .cod-radar { position: absolute; top: 20px; right: clamp(16px, 4vw, 30px); width: 92px; height: 92px; border-radius: 50%; border: 1px solid #4a5137; background: radial-gradient(circle, rgba(143,163,30,.08), transparent 70%); overflow: hidden; }
+  .cod-radar-ring { position: absolute; inset: 26px; border: 1px solid #3c4230; border-radius: 50%; }
+  .cod-radar-sweep { position: absolute; inset: 0; background: conic-gradient(from 0deg, rgba(143,163,30,.55), transparent 55%); animation: gm-radar 2.6s linear infinite; }
+  .cod-blip { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: #8FA31E; box-shadow: 0 0 8px #8FA31E; animation: gm-blip 2.6s ease-in-out infinite; }
+  .cod-blip.b1 { top: 30%; left: 60%; } .cod-blip.b2 { top: 62%; left: 40%; animation-delay: .8s; } .cod-blip.b3 { top: 46%; left: 70%; animation-delay: 1.5s; }
+  @keyframes gm-radar { to { transform: rotate(360deg); } }
+  @keyframes gm-blip { 0%,100% { opacity: 0; } 20% { opacity: 1; } 60% { opacity: .3; } }
+
+  .cod-kicker { font-family: 'Share Tech Mono', monospace; color: #8FA31E; letter-spacing: .3em; font-size: 12px; margin-bottom: 8px; }
+  .cod-wordmark .wm { width: min(540px, 82vw); height: auto; filter: drop-shadow(2px 2px 0 rgba(255,122,0,.35)); }
+  .cod-banner { font-family: 'Oswald'; text-transform: uppercase; letter-spacing: .08em; color: #cfccc2; font-size: clamp(14px, 2vw, 18px); margin: 8px 0 10px; }
+  .cod-lede { color: #9a9c8d; max-width: 620px; line-height: 1.55; font-size: clamp(14px, 2vw, 17px); }
+  .cod-killstreak { display: inline-block; font-family: 'Saira Stencil One'; color: #FF7A00; letter-spacing: .1em; font-size: 15px; border: 1px solid #FF7A00; padding: 6px 14px; margin: 20px 0 12px; text-shadow: 0 0 12px rgba(255,122,0,.5); }
+  .cod-stats { display: flex; gap: 26px; flex-wrap: wrap; }
+  .cod-stat .v { font-family: 'Saira Stencil One'; color: #FF7A00; font-size: 28px; } .cod-star { color: #8FA31E; }
+  .cod-stat .l { font-family: 'Share Tech Mono', monospace; color: #8b8d80; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; margin-top: 4px; }
+  .cod-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
+  .cod-btn { font-family: 'Saira Stencil One'; letter-spacing: .06em; padding: 12px 26px; background: #FF7A00; color: #140a02; border: none; cursor: pointer; transition: transform .15s, box-shadow .2s; }
+  .cod-btn.ghost { background: transparent; border: 1px solid #4a4d40; color: #dedbd2; }
+  .cod-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255,122,0,.4); }
+
+  .cod-h2 { font-family: 'Saira Stencil One'; color: #dedbd2; font-size: clamp(19px, 3vw, 28px); letter-spacing: .04em; margin: 60px 0 20px; }
+  .cod-missions { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .cod-tag, .cod-op { position: relative; background: #1c1e22; border: 1px solid #33362e; padding: 18px; transition: transform .2s, box-shadow .2s; }
+  .cod-tag:hover, .cod-op:hover { transform: translateY(-3px); box-shadow: 0 0 0 1px #FF7A00, 0 14px 30px rgba(0,0,0,.6); }
+  .cod-br { position: absolute; width: 14px; height: 14px; opacity: 0; transition: opacity .2s; }
+  .cod-br.tl { top: 5px; left: 5px; border-top: 2px solid #FF7A00; border-left: 2px solid #FF7A00; }
+  .cod-br.tr { top: 5px; right: 5px; border-top: 2px solid #FF7A00; border-right: 2px solid #FF7A00; }
+  .cod-br.bl { bottom: 5px; left: 5px; border-bottom: 2px solid #FF7A00; border-left: 2px solid #FF7A00; }
+  .cod-br.br { bottom: 5px; right: 5px; border-bottom: 2px solid #FF7A00; border-right: 2px solid #FF7A00; }
+  .cod-tag:hover .cod-br, .cod-op:hover .cod-br { opacity: 1; }
+  .cod-tag-head, .cod-op-head { display: flex; justify-content: space-between; align-items: center; font-family: 'Share Tech Mono', monospace; }
+  .cod-complete, .cod-op-check { color: #8FA31E; font-size: 11px; letter-spacing: .1em; }
+  .cod-callsign, .cod-op-score { color: #FF7A00; font-size: 11px; }
+  .cod-role { font-family: 'Share Tech Mono', monospace; color: #8b8d80; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; margin-top: 10px; }
+  .cod-tag h3, .cod-op h4 { font-family: 'Oswald'; font-weight: 600; text-transform: uppercase; color: #eae7dd; font-size: 18px; margin: 4px 0 6px; letter-spacing: .02em; }
+  .cod-tag p, .cod-op p { color: #9a9c8d; font-size: 13px; line-height: 1.5; }
+  .cod-xp { margin-top: 12px; } .cod-xp-l { display: flex; justify-content: space-between; font-family: 'Share Tech Mono', monospace; font-size: 11px; color: #b7b9a6; margin-bottom: 5px; } .cod-xp-l span { color: #8FA31E; }
+  .cod-xp-bar { height: 7px; background: #101210; border: 1px solid #2a2d24; overflow: hidden; } .cod-xp-bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #8FA31E, #FF7A00); transition: width 1.2s var(--ease); }
+  .cod-tag.in .cod-xp-bar i { width: var(--w); }
+  .cod-stack { font-family: 'Share Tech Mono', monospace; font-size: 11px; color: #8FA31E; margin-bottom: 8px; }
+  .cod-ops { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .cod-op ul { list-style: none; margin-top: 10px; display: flex; flex-direction: column; gap: 5px; } .cod-op li { color: #cfccc2; font-size: 12.5px; } .cod-op li::before { content: "▪ "; color: #FF7A00; }
+
+  .cod-shake { animation: gm-shake .4s cubic-bezier(.36,.07,.19,.97); }
+  @keyframes gm-shake { 10%,90% { transform: translate(-1px,0); } 20%,80% { transform: translate(2px,0); } 30%,50%,70% { transform: translate(-4px,0); } 40%,60% { transform: translate(4px,0); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cod-grid, .cod-rain, .cod-tracers, .cod-radar-sweep, .cod-blip { animation: none !important; }
+    .cod-rain, .cod-tracers { display: none !important; }
+  }
+</style>
+
+<script>
+  (function cod() {
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // deploy-boot coordinate typing
+    const coords = document.getElementById('codCoords');
+    if (coords && !reduce) {
+      const target = 'LAT 29.3759° N · LON 47.9774° E · GRID KW-01 · SECURE';
+      let i = 0;
+      const type = () => { if (!coords.isConnected) return; coords.textContent = target.slice(0, i) + '▋'; if (i++ < target.length) setTimeout(type, 34); else coords.textContent = target; };
+      setTimeout(type, 220);
+    } else if (coords) {
+      coords.textContent = 'LAT 29.3759° N · LON 47.9774° E · SECURE';
+    }
+    if (reduce) return;
+    // tactical grid parallax
+    const grid = document.getElementById('codGrid');
+    let ticking = false;
+    addEventListener('scroll', () => {
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(() => { if (grid) grid.style.transform = `translateY(${scrollY * 0.18}px)`; ticking = false; });
+    }, { passive: true });
+    // screen-shake on DEPLOY
+    const deploy = document.getElementById('codDeploy');
+    const wrap = document.querySelector<HTMLElement>('.cod-wrap');
+    deploy?.addEventListener('click', () => {
+      wrap?.classList.remove('cod-shake'); void wrap?.offsetWidth; wrap?.classList.add('cod-shake');
+      document.getElementById('cod-missions')?.scrollIntoView({ behavior: 'smooth' });
+    });
+  })();
+</script>

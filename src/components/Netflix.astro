@@ -1,0 +1,238 @@
+---
+import { profile } from '../data/profile';
+import { THEMES } from '../lib/themes';
+import { WORDMARKS } from '../lib/wordmarks';
+import AboutBlock from './AboutBlock.astro';
+import ContactBlock from './ContactBlock.astro';
+import FooterBlock from './FooterBlock.astro';
+
+const t = THEMES.netflix;
+const personas = [
+  { name: 'The Media Buyer', glyph: '🎯', c: '#E50914' },
+  { name: 'The Creator', glyph: '🎬', c: '#f5b50a' },
+  { name: 'The Ops Builder', glyph: '📊', c: '#1a7fd6' },
+  { name: 'The Automator', glyph: '⚙️', c: '#2ec27e' },
+];
+---
+<!-- "Who's watching?" profile gate (first-visit intro + switch-in transition) -->
+<div id="nf-gate" style="background:#141414">
+  <p class="nf-gate-title">Who's watching?</p>
+  <div class="nf-profiles">
+    {personas.map((p, i) => (
+      <button class="nf-profile" data-i={i} style={`--pc:${p.c}`}>
+        <span class="nf-avatar">{p.glyph}</span>
+        <span class="nf-pname">{p.name}</span>
+      </button>
+    ))}
+  </div>
+  <p class="nf-gate-hint">Pick a profile — or just watch</p>
+</div>
+<noscript><style>#nf-gate{display:none!important}</style></noscript>
+
+<!-- Billboard hero -->
+<header class="nf-billboard">
+  <div class="nf-poster" aria-hidden="true"></div>
+  <div class="nf-spotlight" aria-hidden="true"></div>
+  <div class="nf-fade" aria-hidden="true"></div>
+  <div class="nf-billboard-inner">
+    <span class="nf-ribbon">NEW</span>
+    <p class="nf-kicker rv">{t.copy.kicker}</p>
+    <div class="nf-wordmark rv" set:html={WORDMARKS.netflix}></div>
+    <p class="nf-banner rv">{t.copy.banner}</p>
+    <p class="nf-logline rv">{profile.identity.tagline} {profile.heroLine.replace(/·/g, '•')}</p>
+    <div class="nf-meta rv">
+      <span class="nf-match">98% Match</span>
+      <span>2026</span><span class="nf-badge">TEAM-OF-1</span><span>Marketing</span><span>Bilingual AR/EN</span><span>{profile.identity.location}</span>
+    </div>
+    <div class="nf-cta rv">
+      <a class="nf-btn play" href="#nf-rows">▶ Play Work</a>
+      <a class="nf-btn list" href={`mailto:${profile.identity.contact.email}`}>+ My List</a>
+    </div>
+  </div>
+</header>
+
+<div class="nf-container" id="nf-rows">
+  <!-- Top wins ranked row -->
+  <section class="nf-section">
+    <h2 class="nf-row-title rv">{t.copy.teamTitle}</h2>
+    <div class="nf-row nf-row--rank">
+      {profile.team.map((m, i) => (
+        <article class="nf-card nf-card--rank rv" tabindex="0">
+          <span class="nf-num" aria-hidden="true">{i + 1}</span>
+          <div class="nf-card-body">
+            <div class="nf-card-role">{m.role}</div>
+            <h3>{m.headline}{m.selfReported && <span class="nf-star">*</span>}</h3>
+            <div class="nf-card-hover">
+              <p>{m.detail}</p>
+              <div class="nf-card-metric"><b>{m.metric}</b> <span>{m.metricLabel}</span></div>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- Mohamed Originals (flagship systems) -->
+  <section class="nf-section">
+    <h2 class="nf-row-title rv">{t.copy.flagTitle}</h2>
+    <div class="nf-row">
+      {profile.flagships.map((f, i) => (
+        <article class="nf-card nf-card--orig rv" tabindex="0">
+          <div class="nf-orig-top" style={`--d:${i}`}>
+            <span class="nf-orig-tag">{f.tag}</span>
+            <span class="nf-orig-N">M</span>
+          </div>
+          <div class="nf-card-body">
+            <h3>{f.name}</h3>
+            <div class="nf-card-role">{f.stack}</div>
+            <div class="nf-card-hover">
+              <p>{f.detail}</p>
+              <ul>{f.metrics.map((x) => <li>{x}</li>)}</ul>
+              <div class="nf-match small">{90 + i * 2}% Match</div>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <div class="nf-about"><AboutBlock /><ContactBlock /><FooterBlock /></div>
+</div>
+
+<style is:global>
+  [data-theme="netflix"] body { background: #141414; }
+  [data-theme="netflix"] .gm-section-title { display: none; }
+
+  /* ---- profile gate ---- */
+  #nf-gate {
+    position: fixed; inset: 0; z-index: 600; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 34px; background: #141414;
+    transition: opacity .6s ease, transform .7s cubic-bezier(.6,0,.2,1);
+  }
+  #nf-gate.hide { opacity: 0; visibility: hidden; pointer-events: none; }
+  #nf-gate.zoom { transform: scale(2.4); opacity: 0; }
+  .nf-gate-title { font-family: 'Archivo', sans-serif; font-weight: 400; color: #fff; font-size: clamp(28px, 6vw, 56px); }
+  .nf-gate-hint { color: #808080; font-size: 14px; }
+  .nf-profiles { display: flex; gap: clamp(14px, 4vw, 40px); flex-wrap: wrap; justify-content: center; }
+  .nf-profile { background: none; border: none; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .nf-avatar {
+    width: clamp(88px, 18vw, 132px); height: clamp(88px, 18vw, 132px); border-radius: 8px;
+    display: grid; place-items: center; font-size: clamp(40px, 8vw, 60px);
+    background: linear-gradient(150deg, var(--pc), #0000), var(--pc);
+    outline: 3px solid transparent; transition: outline-color .2s, transform .2s;
+  }
+  .nf-profile:hover .nf-avatar, .nf-profile:focus-visible .nf-avatar { outline-color: #fff; transform: scale(1.05); }
+  .nf-pname { color: #808080; font-size: 15px; transition: color .2s; }
+  .nf-profile:hover .nf-pname { color: #fff; }
+
+  /* ---- billboard ---- */
+  .nf-billboard { position: relative; min-height: 88vh; display: flex; align-items: flex-end; overflow: hidden; padding: 60px 0 40px; }
+  .nf-poster {
+    position: absolute; inset: -6% -6% -6% -6%; z-index: 0;
+    background:
+      radial-gradient(60% 80% at 72% 30%, rgba(229,9,20,.42), transparent 60%),
+      radial-gradient(50% 60% at 20% 80%, rgba(120,0,6,.5), transparent 60%),
+      linear-gradient(120deg, #2a0206, #141414 60%);
+    animation: gm-kenburns 22s ease-in-out infinite alternate;
+  }
+  .nf-spotlight { position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: linear-gradient(75deg, transparent 30%, rgba(255,255,255,.06) 48%, transparent 66%);
+    background-size: 250% 100%; animation: gm-spot 9s ease-in-out infinite; }
+  .nf-fade { position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(0deg, #141414 6%, transparent 60%), linear-gradient(90deg, #141414 2%, transparent 46%); }
+  .nf-billboard-inner { position: relative; z-index: 2; max-width: 1300px; width: 100%; margin: 0 auto; padding: 0 clamp(18px, 5vw, 60px); }
+  .nf-ribbon { display: inline-block; background: #E50914; color: #fff; font-family: 'Archivo'; font-weight: 700; font-size: 12px; letter-spacing: .12em; padding: 4px 10px; border-radius: 3px; margin-bottom: 14px; }
+  .nf-kicker { color: #E50914; font-family: 'Archivo'; font-weight: 700; letter-spacing: .3em; font-size: 13px; margin-bottom: 12px; }
+  .nf-wordmark .wm { width: min(520px, 78vw); height: auto; filter: drop-shadow(0 6px 30px rgba(229,9,20,.5)); }
+  .nf-banner { font-family: 'Archivo'; font-weight: 900; color: #fff; font-size: clamp(20px, 3vw, 30px); margin: 10px 0 6px; }
+  .nf-logline { color: #d2d2d2; font-size: clamp(15px, 2vw, 19px); max-width: 620px; line-height: 1.5; }
+  .nf-meta { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin: 18px 0; color: #b3b3b3; font-size: 14px; }
+  .nf-match { color: #46d369; font-weight: 700; }
+  .nf-match.small { font-size: 12px; margin-top: 8px; }
+  .nf-badge { border: 1px solid #6b6b6b; padding: 1px 7px; font-size: 11px; letter-spacing: .1em; }
+  .nf-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+  .nf-btn { padding: 12px 28px; border-radius: 5px; font-family: 'Archivo'; font-weight: 700; font-size: 16px; cursor: pointer; transition: transform .15s, background .2s; }
+  .nf-btn.play { background: #fff; color: #000; }
+  .nf-btn.list { background: rgba(109,109,110,.7); color: #fff; }
+  .nf-btn:hover { transform: translateY(-2px); }
+  .nf-btn.play:hover { background: #e6e6e6; }
+
+  /* ---- rows ---- */
+  .nf-container { max-width: 1360px; margin: 0 auto; padding: 10px clamp(18px, 5vw, 60px) 60px; }
+  .nf-section { margin: 34px 0; }
+  .nf-row-title { font-family: 'Archivo'; font-weight: 700; color: #e5e5e5; font-size: clamp(18px, 2.4vw, 24px); margin-bottom: 14px; }
+  .nf-row { display: flex; gap: 12px; overflow-x: auto; overflow-y: hidden; padding: 40px 4px 30px; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #333 transparent; }
+  .nf-row::-webkit-scrollbar { height: 8px; }
+  .nf-row::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+  .nf-card {
+    position: relative; flex: 0 0 auto; width: 270px; background: #1c1c1c; border-radius: 6px;
+    scroll-snap-align: start; transition: transform .3s var(--ease), box-shadow .3s; cursor: pointer;
+  }
+  .nf-card:hover, .nf-card:focus-visible { transform: scale(1.13) translateY(-6px); z-index: 6; box-shadow: 0 20px 44px rgba(0,0,0,.7); outline: none; }
+  .nf-card-body { padding: 14px 16px 16px; }
+  .nf-card-role { color: #E50914; font-family: 'Archivo'; font-weight: 700; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+  .nf-card h3 { font-family: 'Archivo'; font-weight: 700; color: #fff; font-size: 16px; margin: 6px 0; line-height: 1.2; }
+  .nf-star { color: #46d369; }
+  .nf-card-hover { max-height: 0; opacity: 0; overflow: hidden; transition: max-height .3s var(--ease), opacity .3s; }
+  .nf-card:hover .nf-card-hover, .nf-card:focus-visible .nf-card-hover { max-height: 220px; opacity: 1; }
+  .nf-card-hover p { color: #b8b8b8; font-size: 12.5px; line-height: 1.5; margin-bottom: 8px; }
+  .nf-card-hover ul { list-style: none; display: flex; flex-direction: column; gap: 4px; margin-bottom: 6px; }
+  .nf-card-hover li { color: #d8d8d8; font-size: 12px; }
+  .nf-card-hover li::before { content: "✓ "; color: #46d369; }
+  .nf-card-metric b { color: #fff; font-size: 20px; font-family: 'Archivo'; font-weight: 900; }
+  .nf-card-metric span { color: #b3b3b3; font-size: 11px; text-transform: uppercase; }
+
+  /* Top-10 ranked */
+  .nf-card--rank { display: flex; align-items: stretch; width: 300px; background: transparent; }
+  .nf-card--rank .nf-num {
+    font-family: 'Anton', sans-serif; font-size: 120px; line-height: .8; color: #141414;
+    -webkit-text-stroke: 3px #5a5a5a; align-self: flex-end; margin-right: -6px; letter-spacing: -.06em;
+  }
+  .nf-card--rank .nf-card-body { background: #1c1c1c; border-radius: 6px; flex: 1; }
+  .nf-card--rank:hover, .nf-card--rank:focus-visible { transform: scale(1.06) translateY(-4px); }
+
+  /* Originals poster top */
+  .nf-orig-top { height: 132px; border-radius: 6px 6px 0 0; display: flex; align-items: flex-start; justify-content: space-between; padding: 12px 14px;
+    background: linear-gradient(150deg, rgba(229,9,20,.5), #1c1c1c 75%); }
+  .nf-orig-tag { background: #E50914; color: #fff; font-family: 'Archivo'; font-weight: 700; font-size: 11px; padding: 2px 8px; border-radius: 3px; letter-spacing: .06em; }
+  .nf-orig-N { font-family: 'Anton'; color: #E50914; font-size: 30px; line-height: 1; text-shadow: 0 2px 12px rgba(229,9,20,.7); }
+
+  @keyframes gm-kenburns { from { transform: scale(1) translate(0,0); } to { transform: scale(1.14) translate(-2%, -2%); } }
+  @keyframes gm-spot { 0%,100% { background-position: 130% 0; } 50% { background-position: -30% 0; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    #nf-gate { display: none !important; }
+    .nf-poster, .nf-spotlight { animation: none !important; }
+  }
+  @media (max-width: 720px) {
+    .nf-card, .nf-card--rank { width: 230px; }
+    .nf-billboard { min-height: 76vh; }
+  }
+</style>
+
+<script>
+  (function nfGate() {
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const gate = document.getElementById('nf-gate');
+    if (!gate) return;
+    if (reduce) { gate.remove(); return; }
+    const seen = sessionStorage.getItem('gm-nf-seen');
+    try { sessionStorage.setItem('gm-nf-seen', '1'); } catch {}
+
+    function dismiss(zoom: boolean) {
+      gate.classList.add(zoom ? 'zoom' : 'hide');
+      setTimeout(() => gate.remove(), 750);
+    }
+    if (seen) {
+      // repeat visit within session → quick zoom-through
+      requestAnimationFrame(() => setTimeout(() => dismiss(true), 260));
+      return;
+    }
+    gate.querySelectorAll<HTMLButtonElement>('.nf-profile').forEach((b) => {
+      b.addEventListener('click', () => dismiss(true));
+    });
+    // never a dead-end: auto-proceed if no pick
+    const auto = setTimeout(() => dismiss(true), 4200);
+    gate.addEventListener('click', () => clearTimeout(auto));
+  })();
+</script>

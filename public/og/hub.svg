@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151327"/><stop offset="1" stop-color="#0b0b0f"/>
+    </linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#3ad1ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="8" fill="url(#ac)"/>
+  <text x="80" y="150" font-family="Arial, Helvetica, sans-serif" font-size="26" letter-spacing="8" fill="#7c5cff" font-weight="700">GOD MODE PORTFOLIO</text>
+  <text x="76" y="330" font-family="Arial Black, Arial, sans-serif" font-size="180" font-weight="900" fill="#ffffff" letter-spacing="2">MOHAMED</text>
+  <text x="80" y="420" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" fill="#7c5cff">God Mode — one portfolio, five worlds</text>
+  <text x="80" y="500" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#d8d8d8">1,000,000+ followers · $0.84 / lead · 1 person</text>
+  <text x="80" y="575" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#9a9a9a">A whole marketing team in one hire · Kuwait</text>
+</svg>

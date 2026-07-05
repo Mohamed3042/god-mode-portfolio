@@ -1,0 +1,11 @@
+---
+import { profile } from '../data/profile';
+const { about } = profile;
+---
+<section class="gm-about" aria-label="About & honesty">
+  <div class="honesty rv">
+    <strong>How I actually build.</strong> {about.honesty}
+  </div>
+  <p class="bio rv">{about.bio}</p>
+  <p class="gm-note rv">{about.truth}</p>
+</section>

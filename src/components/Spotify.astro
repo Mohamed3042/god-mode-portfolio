@@ -1,0 +1,219 @@
+---
+import { profile } from '../data/profile';
+import { THEMES } from '../lib/themes';
+import AboutBlock from './AboutBlock.astro';
+import ContactBlock from './ContactBlock.astro';
+import FooterBlock from './FooterBlock.astro';
+
+const t = THEMES.spotify;
+const nav = ['Home', 'Search', 'Your Library'];
+const playlists = ['Paid Social', 'Content Studio', 'The 12-tab CRM', 'Automations', "Al-Ma'ali Era"];
+const albums = [
+  { name: "Al-Ma'ali Era", meta: '2021–2025 · Growth', c: '#1DB954' },
+  { name: 'Solo Marketer', meta: '2025– · Full stack', c: '#3d91f0' },
+  { name: 'AI Automations', meta: 'Ongoing · Systems', c: '#c4472e' },
+];
+---
+<!-- color-bleed switch-in -->
+<div id="gm-boot" data-theme="spotify" data-dur="1000" style="background:linear-gradient(180deg,#1DB954,#0c0c0c 78%)">
+  <div class="sp-boot">▶ This Is Mohamed</div>
+</div>
+
+<div class="sp-app">
+  <!-- sidebar -->
+  <aside class="sp-sidebar">
+    <div class="sp-logo">◉ Mohamed</div>
+    <nav class="sp-nav">
+      {nav.map((n, i) => <a href="#sp-main" class={i === 0 ? 'on' : ''}>{n}</a>)}
+    </nav>
+    <div class="sp-lib">
+      <div class="sp-lib-h">Playlists</div>
+      {playlists.map((p) => <a href="#sp-tracks" class="sp-pl">{p}</a>)}
+    </div>
+  </aside>
+
+  <main class="sp-main" id="sp-main">
+    <!-- artist header -->
+    <header class="sp-header">
+      <div class="sp-blob" aria-hidden="true"></div>
+      <div class="sp-header-inner">
+        <div class="sp-avatar" aria-hidden="true"><span>M</span></div>
+        <div class="sp-header-txt">
+          <div class="sp-verified rv">✓ Verified Artist</div>
+          <h1 class="sp-title rv" data-sheen>{t.copy.banner}</h1>
+          <p class="sp-listeners rv"><b data-countup="1000000" data-suffix="+">1,000,000+</b> monthly listeners<span class="sp-star">*</span></p>
+          <p class="sp-tagline rv">{profile.identity.roleShort} · {profile.identity.location} · {profile.identity.tagline}</p>
+        </div>
+      </div>
+      <div class="sp-controls rv">
+        <a class="sp-play" href="#sp-tracks">▶</a>
+        <a class="sp-follow" href={profile.identity.contact.linkedinUrl} target="_blank" rel="noopener">Follow</a>
+        <span class="sp-dots">•••</span>
+      </div>
+    </header>
+
+    <section class="sp-body" id="sp-tracks">
+      <h2 class="sp-h2 rv">Popular</h2>
+      <div class="sp-tracks">
+        {profile.team.map((m, i) => (
+          <div class="sp-track rv" tabindex="0">
+            <div class="sp-idx"><span class="n">{i + 1}</span><span class="p">▶</span></div>
+            <div class="sp-tk-main">
+              <div class="sp-tk-title">{m.role}{m.selfReported && <span class="sp-star">*</span>}</div>
+              <div class="sp-tk-sub">{m.headline}</div>
+            </div>
+            <div class="sp-tk-plays">{m.metric}<span> {m.metricLabel}</span></div>
+            <div class="sp-tk-bar"><i style={`width:${m.level}%`}></i></div>
+          </div>
+        ))}
+      </div>
+
+      <h2 class="sp-h2 rv" style="margin-top:40px">Playlist · {t.copy.flagTitle}</h2>
+      <div class="sp-tracks">
+        {profile.flagships.map((f, i) => (
+          <div class="sp-track rv" tabindex="0">
+            <div class="sp-idx"><span class="n">{profile.team.length + i + 1}</span><span class="p">▶</span></div>
+            <div class="sp-tk-main">
+              <div class="sp-tk-title">{f.name}</div>
+              <div class="sp-tk-sub">{f.stack} — {f.detail}</div>
+            </div>
+            <div class="sp-tk-plays">{f.tag}</div>
+            <div class="sp-tk-bar"><i style="width:100%"></i></div>
+          </div>
+        ))}
+      </div>
+
+      <h2 class="sp-h2 rv" style="margin-top:40px">Discography</h2>
+      <div class="sp-albums">
+        {albums.map((a) => (
+          <div class="sp-album rv" style={`--ac:${a.c}`}>
+            <div class="sp-album-cover"><span>♪</span></div>
+            <div class="sp-album-name">{a.name}</div>
+            <div class="sp-album-meta">{a.meta}</div>
+          </div>
+        ))}
+      </div>
+
+      <div class="sp-about"><AboutBlock /><ContactBlock /><FooterBlock /></div>
+    </section>
+  </main>
+</div>
+
+<!-- pinned now-playing bar -->
+<div class="sp-nowbar" role="status" aria-label="Now playing">
+  <div class="sp-np-left">
+    <div class="sp-np-cover">♪</div>
+    <div>
+      <div class="sp-np-title">Sole Marketer</div>
+      <div class="sp-np-artist">Mohamed · This Is Mohamed</div>
+    </div>
+    <div class="sp-eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+  <div class="sp-np-center">
+    <div class="sp-np-btns"><span>⏮</span><span class="sp-np-play">⏸</span><span>⏭</span></div>
+    <div class="sp-np-prog"><span class="t">1:04</span><div class="sp-np-track"><i></i></div><span class="t">∞</span></div>
+  </div>
+  <div class="sp-np-right"><span>🔊</span></div>
+</div>
+
+<style is:global>
+  [data-theme="spotify"] body { background: #000; }
+  [data-theme="spotify"] .gm-section-title { display: none; }
+
+  .sp-boot { font-family: 'Montserrat'; font-weight: 800; color: #fff; font-size: clamp(24px, 6vw, 48px); animation: gm-bleed 1s ease; }
+  @keyframes gm-bleed { from { transform: translateY(30px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+  .sp-app { display: grid; grid-template-columns: 244px 1fr; gap: 8px; padding: 56px 8px 96px; min-height: 100vh; }
+  .sp-sidebar { background: #000; border-radius: 10px; padding: 18px 14px; position: sticky; top: 56px; align-self: start; height: calc(100vh - 152px); }
+  .sp-logo { font-family: 'Montserrat'; font-weight: 800; color: #fff; font-size: 20px; margin-bottom: 22px; }
+  .sp-nav { display: flex; flex-direction: column; gap: 14px; margin-bottom: 26px; }
+  .sp-nav a { color: #b3b3b3; font-weight: 700; font-size: 15px; transition: color .2s; }
+  .sp-nav a.on, .sp-nav a:hover { color: #fff; }
+  .sp-lib-h { color: #b3b3b3; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 12px; }
+  .sp-pl { display: block; color: #b3b3b3; font-size: 14px; padding: 7px 0; transition: color .2s; }
+  .sp-pl:hover { color: #fff; }
+
+  .sp-main { background: linear-gradient(180deg, #1f1f1f, #121212 260px); border-radius: 10px; overflow: hidden; }
+  .sp-header { position: relative; padding: 60px clamp(20px, 4vw, 40px) 28px; overflow: hidden;
+    background: linear-gradient(150deg, #1DB954 0%, #14833f 30%, #121212 90%); }
+  .sp-blob { position: absolute; width: 460px; height: 460px; top: -180px; right: -80px; z-index: 0;
+    background: radial-gradient(circle, rgba(30,215,96,.55), transparent 62%); filter: blur(30px);
+    border-radius: 42% 58% 63% 37% / 42% 45% 55% 58%; animation: gm-morph 14s ease-in-out infinite; }
+  .sp-header-inner { position: relative; z-index: 1; display: flex; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+  .sp-avatar { width: 168px; height: 168px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #2bde6f, #0a6b2c);
+    display: grid; place-items: center; box-shadow: 0 12px 40px rgba(0,0,0,.5); flex: 0 0 auto; }
+  .sp-avatar span { font-family: 'Montserrat'; font-weight: 800; font-size: 84px; color: #eafff0; }
+  .sp-verified { color: #fff; font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 6px; }
+  .sp-verified::before { content: ""; }
+  .sp-title { font-family: 'Montserrat'; font-weight: 800; color: #fff; font-size: clamp(44px, 9vw, 96px); line-height: 1; margin: 8px 0 14px; position: relative; }
+  .sp-title[data-sheen]::after { content: ""; position: absolute; inset: 0; background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,.6) 50%, transparent 60%); background-size: 250% 100%; animation: gm-textsheen 4.5s ease-in-out infinite; mix-blend-mode: overlay; }
+  .sp-listeners { color: #fff; font-size: 15px; } .sp-listeners b { font-weight: 700; }
+  .sp-tagline { color: #e6ffe6; font-size: 14px; margin-top: 6px; opacity: .9; }
+  .sp-star { color: #b9f5cd; }
+  .sp-controls { position: relative; z-index: 1; display: flex; align-items: center; gap: 22px; padding: 22px clamp(20px, 4vw, 40px); }
+  .sp-play { width: 56px; height: 56px; border-radius: 50%; background: #1DB954; color: #000; display: grid; place-items: center; font-size: 22px; transition: transform .15s, background .2s; }
+  .sp-play:hover { transform: scale(1.06); background: #1ed760; }
+  .sp-follow { border: 1px solid #7a7a7a; color: #fff; padding: 8px 18px; border-radius: 999px; font-weight: 700; font-size: 14px; transition: border-color .2s, transform .15s; }
+  .sp-follow:hover { border-color: #fff; transform: scale(1.03); }
+  .sp-dots { color: #b3b3b3; letter-spacing: 2px; }
+
+  .sp-body { padding: 8px clamp(20px, 4vw, 40px) 40px; }
+  .sp-h2 { font-family: 'Montserrat'; font-weight: 700; color: #fff; font-size: 24px; margin-bottom: 8px; }
+  .sp-tracks { display: flex; flex-direction: column; }
+  .sp-track { display: grid; grid-template-columns: 38px 1fr auto 120px; align-items: center; gap: 16px; padding: 9px 12px; border-radius: 6px; transition: background .2s; cursor: pointer; }
+  .sp-track:hover, .sp-track:focus-visible { background: #ffffff14; outline: none; }
+  .sp-idx { position: relative; color: #b3b3b3; font-size: 15px; text-align: center; }
+  .sp-idx .p { position: absolute; inset: 0; color: #fff; opacity: 0; }
+  .sp-track:hover .sp-idx .n { opacity: 0; } .sp-track:hover .sp-idx .p { opacity: 1; }
+  .sp-tk-title { color: #fff; font-weight: 600; font-size: 15px; }
+  .sp-tk-sub { color: #b3b3b3; font-size: 12.5px; margin-top: 2px; }
+  .sp-tk-plays { color: #b3b3b3; font-size: 13px; font-variant-numeric: tabular-nums; } .sp-tk-plays span { opacity: .7; font-size: 11px; }
+  .sp-tk-bar { height: 4px; background: #333; border-radius: 3px; overflow: hidden; }
+  .sp-tk-bar i { display: block; height: 100%; background: #1DB954; border-radius: 3px; }
+
+  .sp-albums { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; margin-top: 6px; }
+  .sp-album { background: #181818; border-radius: 8px; padding: 16px; transition: background .2s, transform .2s; }
+  .sp-album:hover { background: #282828; transform: translateY(-3px); }
+  .sp-album-cover { aspect-ratio: 1; border-radius: 6px; display: grid; place-items: center; font-size: 40px; color: #fff; margin-bottom: 12px;
+    background: linear-gradient(150deg, var(--ac), #111); box-shadow: 0 8px 24px rgba(0,0,0,.4); }
+  .sp-album-name { color: #fff; font-weight: 700; font-size: 15px; }
+  .sp-album-meta { color: #b3b3b3; font-size: 12.5px; margin-top: 4px; }
+
+  /* now-playing bar */
+  .sp-nowbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 120; height: 76px; display: grid;
+    grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; padding: 0 16px;
+    background: #181818; border-top: 1px solid #282828; animation: sp-npin .6s ease .3s both; }
+  @keyframes sp-npin { from { transform: translateY(100%); } to { transform: none; } }
+  .sp-np-left { display: flex; align-items: center; gap: 12px; }
+  .sp-np-cover { width: 48px; height: 48px; border-radius: 5px; background: linear-gradient(150deg, #1DB954, #0a6b2c); display: grid; place-items: center; color: #fff; }
+  .sp-np-title { color: #fff; font-size: 13px; font-weight: 600; } .sp-np-artist { color: #b3b3b3; font-size: 11.5px; }
+  .sp-eq { display: flex; align-items: flex-end; gap: 2px; height: 20px; margin-left: 6px; }
+  .sp-eq i { width: 3px; background: #1DB954; height: 5px; animation: gm-eq 1s ease-in-out infinite; }
+  .sp-eq i:nth-child(2) { animation-delay: .2s; } .sp-eq i:nth-child(3) { animation-delay: .5s; } .sp-eq i:nth-child(4) { animation-delay: .1s; } .sp-eq i:nth-child(5) { animation-delay: .35s; }
+  .sp-np-center { display: flex; flex-direction: column; align-items: center; gap: 6px; min-width: min(46vw, 420px); }
+  .sp-np-btns { display: flex; align-items: center; gap: 18px; color: #b3b3b3; }
+  .sp-np-play { width: 32px; height: 32px; border-radius: 50%; background: #fff; color: #000; display: grid; place-items: center; font-size: 14px; }
+  .sp-np-prog { display: flex; align-items: center; gap: 10px; width: 100%; }
+  .sp-np-prog .t { color: #b3b3b3; font-size: 11px; font-variant-numeric: tabular-nums; }
+  .sp-np-track { flex: 1; height: 4px; background: #4d4d4d; border-radius: 3px; overflow: hidden; }
+  .sp-np-track i { display: block; height: 100%; width: 8%; background: #fff; border-radius: 3px; animation: gm-progress 34s linear infinite; }
+  .sp-np-track:hover i { background: #1DB954; }
+  .sp-np-right { text-align: right; color: #b3b3b3; padding-right: 8px; }
+
+  @keyframes gm-eq { 0%,100% { height: 4px; } 50% { height: 20px; } }
+  @keyframes gm-morph { 0%,100% { border-radius: 42% 58% 63% 37% / 42% 45% 55% 58%; transform: translate(0,0) rotate(0); } 50% { border-radius: 60% 40% 33% 67% / 55% 58% 42% 45%; transform: translate(-24px, 20px) rotate(12deg); } }
+  @keyframes gm-textsheen { 0% { background-position: 160% 0; } 60%,100% { background-position: -60% 0; } }
+  @keyframes gm-progress { from { width: 6%; } to { width: 100%; } }
+
+  @media (max-width: 860px) {
+    .sp-app { grid-template-columns: 1fr; }
+    .sp-sidebar { display: none; }
+    .sp-track { grid-template-columns: 30px 1fr auto; }
+    .sp-tk-bar { display: none; }
+    .sp-np-center { min-width: 0; } .sp-np-right { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .sp-blob, .sp-eq i, .sp-title[data-sheen]::after, .sp-np-track i, .sp-nowbar { animation: none !important; }
+    .sp-np-track i { width: 34%; }
+  }
+</style>

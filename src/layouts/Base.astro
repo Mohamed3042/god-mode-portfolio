@@ -1,0 +1,158 @@
+---
+import '../styles/global.css';
+import GmSwitcher from '../components/GmSwitcher.astro';
+import { THEMES, type ThemeId } from '../lib/themes';
+import { withBase } from '../lib/base';
+import { profile } from '../data/profile';
+
+interface Props {
+  theme: ThemeId;
+  title: string;
+  description?: string;
+}
+const { theme, title, description } = Astro.props;
+const meta = THEMES[theme];
+const desc =
+  description ??
+  `${profile.identity.name} — ${profile.identity.tagline} ${profile.heroLine}. One portfolio, five brand-styled worlds.`;
+
+// Hub previews all five identities in their own fonts → load the display faces too.
+const HUB_PREVIEW_FONTS =
+  'https://fonts.googleapis.com/css2?family=Anton&family=Chakra+Petch:wght@700&family=Cinzel:wght@800&family=Montserrat:wght@800&family=Saira+Stencil+One&display=swap';
+---
+<!doctype html>
+<html lang="en" data-theme={theme}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={desc} />
+    <meta name="theme-color" content={meta.accent} />
+    <meta name="author" content={profile.identity.name} />
+    <link rel="icon" href={withBase('/favicon.svg')} type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:image" content={withBase(`/og/${theme}.svg`)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={desc} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href={meta.fontsHref} />
+    {theme === 'hub' && <link rel="stylesheet" href={HUB_PREVIEW_FONTS} />}
+
+    <style is:inline>
+      /* Boot overlay is opaque from first paint → never a white flash on switch.
+         JS dismisses it after the theme's signature intro; CSS + noscript are safety nets. */
+      #gm-boot {
+        position: fixed; inset: 0; z-index: 600; display: flex;
+        align-items: center; justify-content: center; overflow: hidden;
+        pointer-events: none; background: #000; text-align: center;
+        animation: gm-bootsafe .6s ease 3.2s forwards;
+      }
+      #gm-boot.done { opacity: 0; visibility: hidden; transition: opacity .55s ease, visibility .55s; }
+      @keyframes gm-bootsafe { to { opacity: 0; visibility: hidden; } }
+      @media (prefers-reduced-motion: reduce) { #gm-boot { display: none !important; } }
+    </style>
+    <noscript><style>#gm-boot { display: none !important; }</style></noscript>
+  </head>
+  <body data-theme={theme}>
+    <GmSwitcher active={theme} />
+    <div class="gm-cursor" aria-hidden="true"></div>
+    <div class="gm-cursor-ring" aria-hidden="true"></div>
+
+    <slot />
+
+    <script>
+      // ---- shared client controller (runs per page load) ----
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // 1) custom cursor (dot + trailing ring), pointer devices only
+      (function cursor() {
+        if (reduce || window.matchMedia('(pointer: coarse)').matches) return;
+        const dot = document.querySelector<HTMLElement>('.gm-cursor');
+        const ring = document.querySelector<HTMLElement>('.gm-cursor-ring');
+        if (!dot || !ring) return;
+        let mx = innerWidth / 2, my = innerHeight / 2, rx = mx, ry = my, raf = 0;
+        function tick() {
+          rx += (mx - rx) * 0.2; ry += (my - ry) * 0.2;
+          ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
+          // self-cancel once the ring has caught up → page can reach idle
+          if (Math.abs(mx - rx) > 0.4 || Math.abs(my - ry) > 0.4) raf = requestAnimationFrame(tick);
+          else raf = 0;
+        }
+        addEventListener('mousemove', (e) => {
+          mx = e.clientX; my = e.clientY;
+          dot.style.transform = `translate(${mx}px, ${my}px) translate(-50%, -50%)`;
+          if (!raf) raf = requestAnimationFrame(tick);
+        }, { passive: true });
+        const hot = 'a, button, .gm-card, .gm-tile, .gm-sw, [data-hot]';
+        addEventListener('mouseover', (e) => {
+          if ((e.target as Element)?.closest?.(hot)) ring.classList.add('hot');
+        });
+        addEventListener('mouseout', (e) => {
+          if ((e.target as Element)?.closest?.(hot)) ring.classList.remove('hot');
+        });
+      })();
+
+      // 2) reveal-on-scroll + card/bar activation + count-up
+      (function reveal() {
+        const els = Array.from(document.querySelectorAll('.rv'));
+        if (reduce) { els.forEach((e) => e.classList.add('in')); runCountups(document); return; }
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((en) => {
+            if (en.isIntersecting) {
+              en.target.classList.add('in');
+              runCountups(en.target as HTMLElement);
+              io.unobserve(en.target);
+            }
+          });
+        }, { threshold: 0.14, rootMargin: '0px 0px -6% 0px' });
+        els.forEach((e) => io.observe(e));
+      })();
+
+      function runCountups(scope: HTMLElement | Document) {
+        const targets = (scope instanceof Element && scope.matches('[data-countup]'))
+          ? [scope]
+          : Array.from(scope.querySelectorAll<HTMLElement>('[data-countup]'));
+        targets.forEach((el) => {
+          if (el.dataset.done) return; el.dataset.done = '1';
+          const raw = el.dataset.countup || '0';
+          const num = parseFloat(raw.replace(/[^0-9.]/g, ''));
+          if (!isFinite(num) || reduce) { el.textContent = raw; return; }
+          const prefix = el.dataset.prefix || '';
+          const suffix = el.dataset.suffix || '';
+          const dur = 1100; const start = performance.now();
+          const fmt = num >= 1000;
+          function step(now: number) {
+            const p = Math.min(1, (now - start) / dur);
+            const eased = 1 - Math.pow(1 - p, 3);
+            const v = num * eased;
+            el.textContent = prefix + (fmt ? Math.round(v).toLocaleString() : (Number.isInteger(num) ? Math.round(v).toString() : v.toFixed(2))) + suffix;
+            if (p < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+        });
+      }
+
+      // 3) dismiss the boot overlay after its signature intro (or instantly on repeat visits)
+      (function boot() {
+        const el = document.getElementById('gm-boot');
+        if (!el) return;
+        if (reduce) { el.remove(); return; }
+        const key = 'gm-boot-' + (el.dataset.theme || 'x');
+        const seen = sessionStorage.getItem(key);
+        const dur = seen ? 380 : parseInt(el.dataset.dur || '1600', 10);
+        try { sessionStorage.setItem(key, '1'); } catch {}
+        if (seen) el.classList.add('gm-boot-quick');
+        setTimeout(() => {
+          el.classList.add('done');
+          setTimeout(() => el.remove(), 620);
+        }, dur);
+      })();
+    </script>
+  </body>
+</html>

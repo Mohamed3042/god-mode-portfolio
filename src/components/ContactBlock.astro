@@ -1,0 +1,11 @@
+---
+import { profile } from '../data/profile';
+const { identity } = profile;
+const c = identity.contact;
+---
+<section class="gm-contact rv" aria-label="Contact">
+  <a href={`mailto:${c.email}`}>✉ {c.email}</a>
+  <a href={`tel:${c.phone.replace(/\s/g, '')}`}>☎ {c.phone}</a>
+  <a href={c.linkedinUrl} target="_blank" rel="noopener">in {c.linkedin}</a>
+  <span>◷ {identity.location}</span>
+</section>

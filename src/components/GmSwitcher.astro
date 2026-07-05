@@ -1,0 +1,22 @@
+---
+import { THEME_ORDER, THEMES, type ThemeId } from '../lib/themes';
+import { withBase } from '../lib/base';
+
+interface Props { active: ThemeId; }
+const { active } = Astro.props;
+---
+<nav class="gm-switcher" aria-label="God Mode theme switcher">
+  <span class="brand">God&nbsp;Mode</span>
+  {THEME_ORDER.map((id) => {
+    const t = THEMES[id];
+    const isActive = id === active;
+    return (
+      <a
+        class="gm-sw"
+        href={withBase(t.route)}
+        data-theme-target={id}
+        aria-current={isActive ? 'page' : undefined}
+      >{t.label}</a>
+    );
+  })}
+</nav>

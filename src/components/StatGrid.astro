@@ -1,0 +1,17 @@
+---
+import { profile } from '../data/profile';
+interface Props { cardLabel: string; }
+const { cardLabel } = Astro.props;
+---
+<div class="gm-grid">
+  {profile.team.map((t, i) => (
+    <article class={`gm-card rv d${(i % 3) + 1}`} style={`--w:${t.level}%`}>
+      <div class="label">{cardLabel}</div>
+      <div class="role">{t.role}</div>
+      <h3>{t.headline}{t.selfReported && <span class="gm-star" title="self-reported">*</span>}</h3>
+      <p>{t.detail}</p>
+      <div class="metric"><b>{t.metric}</b><span>{t.metricLabel}</span></div>
+      <div class="gm-bar"><i></i></div>
+    </article>
+  ))}
+</div>
