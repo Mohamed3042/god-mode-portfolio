@@ -18,7 +18,7 @@ const desc =
 
 // Hub previews all five identities in their own fonts → load the display faces too.
 const HUB_PREVIEW_FONTS =
-  'https://fonts.googleapis.com/css2?family=Anton&family=Chakra+Petch:wght@700&family=Cinzel:wght@800&family=Montserrat:wght@800&family=Saira+Stencil+One&display=swap';
+  'https://fonts.googleapis.com/css2?family=Anton&family=Chakra+Petch:wght@700&family=Cinzel:wght@800&family=Montserrat:wght@800&family=Saira+Stencil+One&family=Sora:wght@700;800&display=swap';
 ---
 <!doctype html>
 <html lang="en" data-theme={theme}>
@@ -41,7 +41,7 @@ const HUB_PREVIEW_FONTS =
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href={meta.fontsHref} />
+    {meta.fontsHref && <link rel="stylesheet" href={meta.fontsHref} />}
     {theme === 'hub' && <link rel="stylesheet" href={HUB_PREVIEW_FONTS} />}
 
     <style is:inline>

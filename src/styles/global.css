@@ -79,6 +79,20 @@ body {
   --shadow: 0 18px 44px rgba(0, 0, 0, .6);
   --font-d: 'Montserrat', system-ui, sans-serif; --font-b: 'Montserrat', system-ui, sans-serif; --font-m: 'Montserrat', monospace;
 }
+[data-theme="apple"] {
+  --bg: #000000; --panel: #151517; --edge: #2a2a2e; --text: #f5f5f7; --muted: #86868b;
+  --accent: #2997ff; --accent2: #a86bff; --radius: 22px; --caps: none; --track: normal;
+  --shadow: 0 24px 60px rgba(0, 0, 0, .6);
+  --font-d: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-b: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-m: ui-monospace, 'SF Mono', Menlo, monospace;
+}
+[data-theme="samsung"] {
+  --bg: #000006; --panel: #0e1020; --edge: #23305f; --text: #f4f6ff; --muted: #9aa0b5;
+  --accent: #3562ff; --accent2: #12b6ff; --radius: 22px; --caps: none; --track: normal;
+  --shadow: 0 26px 64px -12px rgba(53, 98, 255, .5);
+  --font-d: 'Sora', system-ui, sans-serif; --font-b: 'Sora', system-ui, sans-serif; --font-m: 'Sora', system-ui, sans-serif;
+}
 
 /* ============================================================
    LAYOUT + SHARED COMPONENTS

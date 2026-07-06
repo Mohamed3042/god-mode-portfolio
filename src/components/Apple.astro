@@ -1,0 +1,180 @@
+---
+import { profile } from '../data/profile';
+import { THEMES } from '../lib/themes';
+import { WORDMARKS } from '../lib/wordmarks';
+import AboutBlock from './AboutBlock.astro';
+import ContactBlock from './ContactBlock.astro';
+import FooterBlock from './FooterBlock.astro';
+
+const t = THEMES.apple;
+// soft floating orbs (Claude Design's appleOrbs)
+const orbs = [
+  { x: 6, y: 10, s: 380, c: 'rgba(41,151,255,.20)', d: 19, dl: -4 },
+  { x: 68, y: 4, s: 460, c: 'rgba(168,107,255,.17)', d: 22, dl: -9 },
+  { x: 30, y: 46, s: 300, c: 'rgba(255,122,182,.15)', d: 17, dl: -2 },
+  { x: 78, y: 52, s: 420, c: 'rgba(41,151,255,.15)', d: 24, dl: -13 },
+  { x: 2, y: 62, s: 340, c: 'rgba(120,200,255,.15)', d: 20, dl: -7 },
+];
+---
+<div id="gm-boot" data-theme="apple" data-dur="1700" style="background:#000">
+  <div class="ap-boot-spot" aria-hidden="true"></div>
+  <div class="ap-boot-in">
+    <div class="ap-boot-mark" set:html={WORDMARKS.apple}></div>
+    <div class="ap-boot-tag">Think Different</div>
+  </div>
+</div>
+
+<div class="fx ap-orbs" aria-hidden="true">
+  {orbs.map((o) => (
+    <div style={`left:${o.x}%;top:${o.y}%;width:${o.s}px;height:${o.s}px;background:radial-gradient(circle,${o.c},transparent 68%);animation-duration:${o.d}s;animation-delay:${o.dl}s`}></div>
+  ))}
+</div>
+
+<main class="ap-wrap">
+  <!-- hero / keynote -->
+  <section class="ap-hero">
+    <div class="ap-wordmark rv" set:html={WORDMARKS.apple}></div>
+    <h1 class="ap-head rv">A whole marketing team.<br><span class="ap-grad">In one hire.</span></h1>
+    <p class="ap-sub rv">{t.copy.lede}</p>
+    <div class="ap-links rv">
+      <a href="#ap-builds">{t.copy.cta1}</a>
+      <a href="#ap-team">{t.copy.cta2}</a>
+    </div>
+    <div class="ap-keynote rv" data-reveal>
+      <div class="ap-keynote-orb" aria-hidden="true"></div>
+      <div class="ap-keynote-num">{profile.heroStats[0].value}<sup>*</sup></div>
+      <div class="ap-keynote-line">{profile.heroLine}</div>
+    </div>
+  </section>
+
+  <!-- team -->
+  <section class="ap-section" id="ap-team">
+    <h2 class="ap-h2 rv">{t.copy.teamTitle}</h2>
+    <p class="ap-h2sub rv">The whole team you'd hire — on one page.</p>
+    <div class="ap-grid">
+      {profile.team.map((m) => (
+        <article class="ap-card rv">
+          <div class="ap-card-glow" aria-hidden="true"></div>
+          <div class="ap-role">{m.role}</div>
+          <div class="ap-stat">{m.metric}{m.selfReported && <sup class="ap-star">*</sup>}</div>
+          <div class="ap-statl">{m.metricLabel} · {m.headline}</div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- titanium operator card -->
+  <section class="ap-section ap-center">
+    <h2 class="ap-h2 rv">One card. Every role.</h2>
+    <p class="ap-h2sub rv">The operator, issued in titanium.</p>
+    <div class="ap-titan-wrap rv" data-reveal>
+      <div class="ap-titan">
+        <div class="ap-titan-sheen" aria-hidden="true"></div>
+        <div class="ap-titan-top">
+          <div class="ap-titan-name">Mohamed</div>
+          <div class="ap-titan-chip" aria-hidden="true"></div>
+        </div>
+        <div class="ap-titan-foot">
+          <div class="ap-titan-full">{profile.identity.name}</div>
+          <div class="ap-titan-role">{profile.identity.roleShort} · {profile.identity.location}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- builds bento -->
+  <section class="ap-section" id="ap-builds">
+    <h2 class="ap-h2 ap-center-txt rv">{t.copy.flagTitle}</h2>
+    <div class="ap-grid ap-grid--builds">
+      {profile.flagships.map((f, i) => (
+        <article class="ap-card ap-build rv">
+          <div class="ap-role">Build {String(i + 1).padStart(2, '0')}</div>
+          <div class="ap-build-title">{f.name}</div>
+          <div class="ap-build-metric">{f.metrics[0]}</div>
+          <div class="ap-statl">{f.stack} · {f.detail}</div>
+        </article>
+      ))}
+    </div>
+    <p class="ap-foot-note">{profile.about.truth}</p>
+  </section>
+
+  <div class="ap-extra"><AboutBlock /><ContactBlock /><FooterBlock /></div>
+</main>
+
+<style is:global>
+  [data-theme="apple"] body { background: #000; }
+  [data-theme="apple"] .gm-section-title { display: none; }
+
+  @keyframes gm-fadeup { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+  @keyframes gm-spot { 0% { transform: translateX(-70%); opacity: 0; } 45% { opacity: .5; } 100% { transform: translateX(240%); opacity: 0; } }
+  @keyframes gm-orb { 0%,100% { transform: translate3d(0,0,0) scale(1); } 50% { transform: translate3d(44px,34px,0) scale(1.14); } }
+  @keyframes gm-sheen { 0% { background-position: 220% 0; } 100% { background-position: -120% 0; } }
+  @keyframes gm-textsheen { 0% { background-position: 200% center; } 100% { background-position: -200% center; } }
+
+  /* boot */
+  .ap-boot-spot { position: absolute; top: 0; bottom: 0; left: 0; width: 45%; pointer-events: none;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.16), transparent); animation: gm-spot 1.7s ease-in-out .1s forwards; }
+  .ap-boot-in { position: relative; text-align: center; animation: gm-fadeup 1s ease-out both; }
+  .ap-boot-mark .wm { width: min(360px, 70vw); height: auto; margin: 0 auto; }
+  .ap-boot-tag { font-family: -apple-system, 'Helvetica Neue', sans-serif; letter-spacing: .5em; color: #86868b; margin-top: 24px; text-transform: uppercase; font-size: 12px; }
+
+  .ap-orbs { z-index: 0; }
+  .ap-orbs > div { position: absolute; border-radius: 50%; filter: blur(16px); animation-name: gm-orb; animation-timing-function: ease-in-out; animation-iteration-count: infinite; }
+
+  .ap-wrap { position: relative; z-index: 2; }
+  .ap-hero { max-width: 1000px; margin: 0 auto; padding: clamp(78px,12vh,140px) 22px clamp(40px,7vh,86px); text-align: center; }
+  .ap-wordmark { width: min(320px, 60vw); margin: 0 auto 26px; }
+  .ap-wordmark .wm { width: 100%; height: auto; }
+  .ap-head { font-weight: 600; font-size: clamp(40px,8.4vw,96px); line-height: 1.02; letter-spacing: -.035em; color: #f5f5f7; margin: 0; }
+  .ap-grad { background: linear-gradient(90deg,#2997ff,#a86bff 45%,#ff7ab6 70%,#2997ff); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gm-textsheen 6s linear infinite; }
+  .ap-sub { font-size: clamp(18px,2.6vw,27px); line-height: 1.35; color: #86868b; margin: 22px auto 0; max-width: 620px; font-weight: 400; }
+  .ap-links { display: flex; gap: 26px; justify-content: center; flex-wrap: wrap; margin-top: 26px; font-size: clamp(16px,2vw,21px); }
+  .ap-links a { color: #2997ff; } .ap-links a:hover { text-decoration: underline; }
+  .ap-keynote { position: relative; margin-top: clamp(40px,6vh,72px); border-radius: 24px; overflow: hidden; border: 1px solid rgba(255,255,255,.1);
+    background: radial-gradient(120% 130% at 50% 0%, #17171b, #0a0a0c 70%); aspect-ratio: 16/9; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 40px 90px rgba(0,0,0,.6); }
+  .ap-keynote-orb { position: absolute; width: 60%; aspect-ratio: 1; top: -30%; border-radius: 50%; background: radial-gradient(circle, rgba(41,151,255,.35), transparent 66%); filter: blur(20px); }
+  .ap-keynote-num { position: relative; font-weight: 600; font-size: clamp(48px,9vw,104px); letter-spacing: -.04em; color: #f5f5f7; line-height: 1; }
+  .ap-keynote-num sup { font-size: .28em; color: #2997ff; top: -1.5em; }
+  .ap-keynote-line { position: relative; color: #86868b; font-size: clamp(13px,1.7vw,17px); }
+
+  .ap-section { max-width: 1120px; margin: 0 auto; padding: clamp(30px,6vh,64px) 22px; }
+  .ap-center { text-align: center; }
+  .ap-h2 { font-weight: 600; font-size: clamp(30px,5vw,56px); line-height: 1.05; letter-spacing: -.025em; color: #f5f5f7; margin: 0 0 8px; text-align: center; }
+  .ap-center-txt { text-align: center; margin-bottom: 34px; }
+  .ap-h2sub { text-align: center; font-size: clamp(16px,2vw,21px); line-height: 1.4; color: #86868b; margin: 0 auto 36px; max-width: 560px; }
+  .ap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 14px; }
+  .ap-grid--builds { grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); }
+  .ap-card { position: relative; border-radius: 22px; padding: 26px; background: linear-gradient(180deg,#161618,#0d0d0f); border: 1px solid rgba(255,255,255,.08); overflow: hidden;
+    transition: transform .35s var(--ease), border-color .35s, box-shadow .35s; }
+  .ap-card:hover { transform: translateY(-6px); border-color: rgba(255,255,255,.22); box-shadow: 0 24px 60px rgba(0,0,0,.5); }
+  .ap-card-glow { position: absolute; inset: 0; background: radial-gradient(120% 80% at 80% 0%, rgba(41,151,255,.10), transparent 60%); pointer-events: none; }
+  .ap-role { position: relative; font-weight: 600; font-size: 12px; color: #86868b; text-transform: uppercase; letter-spacing: .01em; }
+  .ap-stat { position: relative; font-weight: 600; font-size: clamp(34px,4.6vw,54px); letter-spacing: -.035em; color: #f5f5f7; margin-top: 18px; line-height: 1; }
+  .ap-star, .ap-stat sup { font-size: .32em; color: #2997ff; top: -1.4em; }
+  .ap-statl { position: relative; font-size: 14px; line-height: 1.5; color: #86868b; margin-top: 10px; }
+  .ap-build-title { position: relative; font-weight: 600; font-size: clamp(20px,2.4vw,25px); line-height: 1.1; color: #f5f5f7; margin-top: 14px; }
+  .ap-build-metric { position: relative; font-weight: 600; font-size: clamp(28px,3.4vw,40px); letter-spacing: -.025em; color: #2997ff; margin-top: 18px; line-height: 1; }
+
+  /* titanium card */
+  .ap-titan-wrap { display: flex; justify-content: center; }
+  .ap-titan { position: relative; width: min(470px,92vw); aspect-ratio: 1.585; border-radius: 26px; overflow: hidden;
+    background: linear-gradient(135deg,#fafafa,#d4d4da 46%,#ececef); box-shadow: 0 44px 100px rgba(0,0,0,.62), inset 0 0 0 1px rgba(255,255,255,.5);
+    padding: clamp(22px,4vw,32px); text-align: left; color: #1d1d1f; transition: transform .4s var(--ease); }
+  .ap-titan:hover { transform: translateY(-6px) rotate(-.6deg); }
+  .ap-titan-sheen { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(105deg, transparent 38%, rgba(255,255,255,.75) 50%, transparent 62%); background-size: 220% 100%; animation: gm-sheen 4.6s ease-in-out infinite; }
+  .ap-titan-top { display: flex; justify-content: space-between; align-items: flex-start; position: relative; }
+  .ap-titan-name { font-weight: 600; font-size: clamp(20px,2.6vw,27px); letter-spacing: -.02em; }
+  .ap-titan-chip { width: 40px; height: 30px; border-radius: 6px; background: linear-gradient(135deg,#d4af37,#f4e4a0 50%,#c99a2e); }
+  .ap-titan-foot { position: absolute; left: clamp(22px,4vw,32px); right: clamp(22px,4vw,32px); bottom: clamp(22px,4vw,32px); }
+  .ap-titan-full { font-weight: 600; font-size: clamp(15px,1.9vw,19px); line-height: 1.2; }
+  .ap-titan-role { font-size: 11px; line-height: 1.3; color: #6e6e73; margin-top: 5px; text-transform: uppercase; letter-spacing: .12em; }
+
+  .ap-foot-note { margin-top: 30px; text-align: center; font-size: 12px; line-height: 1.7; color: #5a5a5f; }
+  .ap-extra { max-width: 1120px; margin: 0 auto; padding: 0 22px 120px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ap-orbs, .ap-boot-spot, .ap-titan-sheen, .ap-grad { animation: none !important; }
+    .ap-orbs { display: none !important; }
+    .ap-grad { color: #2997ff; }
+  }
+</style>

@@ -5,7 +5,7 @@
  * Never the company name — the person is Mohamed; every wordmark spells MOHAMED.
  */
 
-export type ThemeId = 'hub' | 'razer' | 'disney' | 'cod' | 'netflix' | 'spotify';
+export type ThemeId = 'hub' | 'razer' | 'disney' | 'cod' | 'netflix' | 'spotify' | 'apple' | 'samsung';
 
 export interface ThemeMeta {
   id: ThemeId;
@@ -23,7 +23,7 @@ export interface ThemeMeta {
     /** overlay headline */
     text: string;
     /** which transition routine to run */
-    kind: 'boot' | 'zoom' | 'deploy' | 'warp' | 'bleed' | 'hub';
+    kind: 'boot' | 'zoom' | 'deploy' | 'warp' | 'bleed' | 'hub' | 'spot' | 'ring';
   };
   copy: {
     kicker: string;
@@ -179,12 +179,57 @@ export const THEMES: Record<ThemeId, ThemeMeta> = {
       cta2: 'Follow',
     },
   },
+
+  apple: {
+    id: 'apple',
+    label: 'Apple',
+    route: '/apple',
+    accent: '#2997ff',
+    accent2: '#a86bff',
+    // Apple uses the native system font stack — no web font to load.
+    fontsHref: '',
+    transition: { text: 'Think Different', kind: 'spot' },
+    copy: {
+      kicker: 'THINK DIFFERENT',
+      banner: 'Think Different',
+      lede:
+        'Media buying, organic growth, creative, ops, strategy and automation. One operator. Bilingual AR / EN, based in Kuwait.',
+      teamTitle: 'Get to know the operator.',
+      flagTitle: 'Shipped. Live. Yours to see.',
+      cardLabel: 'OPERATOR',
+      flagLabel: 'BUILD',
+      cta1: 'Watch the reel ›',
+      cta2: 'Learn more ›',
+    },
+  },
+
+  samsung: {
+    id: 'samsung',
+    label: 'Samsung',
+    route: '/samsung',
+    accent: '#3562ff',
+    accent2: '#12b6ff',
+    fontsHref: 'https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap',
+    transition: { text: 'Mohamed Ultra', kind: 'ring' },
+    copy: {
+      kicker: 'GALAXY · MOHAMED ULTRA',
+      banner: 'Mohamed Ultra',
+      lede:
+        'One operator engineered for scale — paid, organic, creative, ops, strategy and automation, in a single hire.',
+      teamTitle: 'Full specifications',
+      flagTitle: 'The lineup',
+      cardLabel: 'SPEC',
+      flagLabel: 'MODEL',
+      cta1: 'Discover ›',
+      cta2: 'See the specs ›',
+    },
+  },
 };
 
-export const THEME_ORDER: ThemeId[] = ['hub', 'razer', 'disney', 'cod', 'netflix', 'spotify'];
+export const THEME_ORDER: ThemeId[] = ['hub', 'razer', 'disney', 'cod', 'netflix', 'spotify', 'apple', 'samsung'];
 
-/** the 5 switchable brand identities (excludes hub) */
-export const BRAND_THEMES: ThemeId[] = ['razer', 'disney', 'cod', 'netflix', 'spotify'];
+/** the 7 switchable brand identities (excludes hub) */
+export const BRAND_THEMES: ThemeId[] = ['razer', 'disney', 'cod', 'netflix', 'spotify', 'apple', 'samsung'];
 
 export function getTheme(id: ThemeId): ThemeMeta {
   return THEMES[id];

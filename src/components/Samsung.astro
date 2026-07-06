@@ -1,0 +1,191 @@
+---
+import { profile } from '../data/profile';
+import { THEMES } from '../lib/themes';
+import { WORDMARKS } from '../lib/wordmarks';
+import AboutBlock from './AboutBlock.astro';
+import ContactBlock from './ContactBlock.astro';
+import FooterBlock from './FooterBlock.astro';
+
+const t = THEMES.samsung;
+// deterministic starfield + orbiting rings (Claude Design's samStars / samOrbits)
+const stars = Array.from({ length: 48 }, (_, i) => {
+  const rx = ((i * 131) % 997) / 997;
+  const ry = ((i * 271 * 7 + 13) % 991) / 991;
+  return {
+    x: (rx * 100).toFixed(2), y: (ry * 130).toFixed(2),
+    s: i % 4 === 0 ? 2 : 1, blue: i % 5 === 0,
+    d: (2 + (i % 4)).toFixed(1), dl: ((i % 6) * 0.4).toFixed(1),
+  };
+});
+const orbits = Array.from({ length: 6 }, (_, i) => ({ s: 200 + i * 92, d: 14 + i * 5, rev: i % 2 === 1, dot: i % 2 ? '#12b6ff' : '#3562ff' }));
+
+const heroStrip = [
+  { value: '1,000,000+', num: '1000000', prefix: '', suffix: '+', label: 'followers', star: true },
+  { value: '$0.84', num: '0.84', prefix: '$', suffix: '', label: 'cost / lead', star: false },
+  { value: '1', num: '1', prefix: '', suffix: '', label: 'person, all roles', star: false },
+];
+---
+<div id="gm-boot" data-theme="samsung" data-dur="2100" style="background:#000006">
+  <div class="sm-boot-ring" aria-hidden="true"></div>
+  <div class="sm-boot-in">
+    <div class="sm-boot-mark" set:html={WORDMARKS.samsung}></div>
+    <div class="sm-boot-ultra">Mohamed Ultra</div>
+    <div class="sm-boot-bar"><i></i></div>
+    <div class="sm-boot-tag">Do the extraordinary</div>
+  </div>
+</div>
+
+<!-- galaxy background FX -->
+<div class="fx sm-glow" aria-hidden="true"></div>
+<div class="fx sm-swirl" aria-hidden="true"></div>
+<div class="fx sm-stars" aria-hidden="true">
+  {stars.map((st) => (
+    <div style={`left:${st.x}%;top:${st.y}%;width:${st.s}px;height:${st.s}px;background:${st.blue ? '#7fd0ff' : '#fff'};box-shadow:0 0 4px ${st.blue ? '#12b6ff' : 'rgba(255,255,255,.8)'};animation-duration:${st.d}s;animation-delay:${st.dl}s`}></div>
+  ))}
+</div>
+<div class="fx sm-orbits" aria-hidden="true">
+  {orbits.map((o) => (
+    <div class="sm-orbit" style={`width:${o.s}px;height:${o.s}px;margin-left:${-o.s / 2}px;margin-top:${-o.s / 2}px;animation-duration:${o.d}s;animation-direction:${o.rev ? 'reverse' : 'normal'}`}>
+      <span style={`background:${o.dot};box-shadow:0 0 8px ${o.dot}`}></span>
+    </div>
+  ))}
+</div>
+
+<main class="sm-wrap">
+  <section class="sm-hero">
+    <div class="sm-kicker rv">Galaxy · Mohamed Ultra</div>
+    <div class="sm-wordmark rv" set:html={WORDMARKS.samsung}></div>
+    <h1 class="sm-head rv">Do the<br><span class="sm-grad">extraordinary.</span></h1>
+    <p class="sm-sub rv">{t.copy.lede}</p>
+    <div class="sm-cta rv">
+      <a class="sm-btn primary" href="#sm-specs">{t.copy.cta1}</a>
+      <a class="sm-btn ghost" href="#sm-specs">{t.copy.cta2}</a>
+    </div>
+    <div class="sm-strip rv">
+      {heroStrip.map((s) => (
+        <div class="sm-strip-cell">
+          <div class="sm-strip-v"><span data-countup={s.num} data-prefix={s.prefix} data-suffix={s.suffix}>{s.value}</span>{s.star && <sup>*</sup>}</div>
+          <div class="sm-strip-l">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="sm-section" id="sm-specs">
+    <div class="sm-sec-head rv"><h2>{t.copy.teamTitle}</h2><span>The team you replace</span></div>
+    <div class="sm-specs">
+      {profile.team.map((m) => (
+        <div class="sm-spec rv">
+          <div class="sm-spec-l">
+            <div class="sm-spec-role">{m.role}</div>
+            <div class="sm-spec-sub">{m.headline} · {m.detail}</div>
+          </div>
+          <div class="sm-spec-r">
+            <div class="sm-spec-v">{m.metric}{m.selfReported && <sup>*</sup>}</div>
+            <div class="sm-spec-vl">{m.metricLabel}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="sm-section">
+    <div class="sm-sec-head rv"><h2>{t.copy.flagTitle}</h2><span>Shipped &amp; live</span></div>
+    <div class="sm-models">
+      {profile.flagships.map((f, i) => (
+        <article class="sm-model rv">
+          <div class="sm-model-glow" aria-hidden="true"></div>
+          <div class="sm-model-n">Model {String(i + 1).padStart(2, '0')}</div>
+          <div class="sm-model-title">{f.name}</div>
+          <div class="sm-model-metric">{f.metrics[0]}</div>
+          <div class="sm-model-sub">{f.stack} · {f.detail}</div>
+        </article>
+      ))}
+    </div>
+    <p class="sm-foot-note">{profile.about.truth}</p>
+  </section>
+
+  <div class="sm-extra"><AboutBlock /><ContactBlock /><FooterBlock /></div>
+</main>
+
+<style is:global>
+  [data-theme="samsung"] body { background: #000006; }
+  [data-theme="samsung"] .gm-section-title { display: none; }
+
+  @keyframes gm-fadeup { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+  @keyframes gm-bar { from { width: 0; } to { width: 100%; } }
+  @keyframes gm-swirl { to { transform: rotate(360deg); } }
+  @keyframes gm-radar { to { transform: rotate(360deg); } }
+  @keyframes gm-twinkle { 0%,100% { opacity: .12; } 50% { opacity: 1; } }
+  @keyframes gm-textsheen { 0% { background-position: 200% center; } 100% { background-position: -200% center; } }
+
+  /* boot */
+  .sm-boot-ring { position: absolute; left: 50%; top: 50%; width: min(700px,120vw); aspect-ratio: 1; transform: translate(-50%,-50%); opacity: .6; pointer-events: none;
+    background: conic-gradient(from 0deg, transparent, rgba(53,98,255,.35), transparent 45%, rgba(18,182,255,.3), transparent 75%);
+    border-radius: 50%; -webkit-mask: radial-gradient(closest-side, transparent 56%, #000 58%); mask: radial-gradient(closest-side, transparent 56%, #000 58%); animation: gm-swirl 6s linear infinite; }
+  .sm-boot-in { position: relative; text-align: center; animation: gm-fadeup .8s ease-out both; }
+  .sm-boot-mark .wm { width: min(380px,72vw); height: auto; margin: 0 auto; }
+  .sm-boot-ultra { font-family: 'Sora', sans-serif; font-weight: 800; color: #f4f6ff; font-size: clamp(22px,5vw,44px); letter-spacing: -.02em; margin-top: 12px; }
+  .sm-boot-bar { width: min(300px,70vw); height: 3px; background: rgba(53,98,255,.2); margin: 24px auto 0; overflow: hidden; border-radius: 2px; }
+  .sm-boot-bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg,#3562ff,#12b6ff); box-shadow: 0 0 16px #3562ff; animation: gm-bar 1.9s ease-out forwards; }
+  .sm-boot-tag { font-family: 'Sora', sans-serif; font-weight: 500; font-size: 11px; letter-spacing: .4em; text-transform: uppercase; color: #9aa0b5; margin-top: 18px; }
+
+  /* galaxy bg */
+  .sm-glow { z-index: 0; background: radial-gradient(90% 60% at 50% 0%, rgba(53,98,255,.28), transparent 60%), radial-gradient(70% 50% at 82% 16%, rgba(18,182,255,.14), transparent 60%); }
+  .sm-swirl { z-index: 0; left: 50%; top: -18vh; width: 120vw; max-width: 1500px; aspect-ratio: 1; transform: translateX(-50%); opacity: .5; inset: auto;
+    background: conic-gradient(from 0deg, transparent, rgba(53,98,255,.18), transparent 40%, rgba(18,182,255,.16), transparent 72%);
+    border-radius: 50%; -webkit-mask: radial-gradient(closest-side, transparent 58%, #000 60%); mask: radial-gradient(closest-side, transparent 58%, #000 60%); animation: gm-swirl 34s linear infinite; }
+  .sm-stars { z-index: 0; overflow: hidden; }
+  .sm-stars > div { position: absolute; border-radius: 50%; animation-name: gm-twinkle; animation-timing-function: ease-in-out; animation-iteration-count: infinite; }
+  .sm-orbits { z-index: 0; overflow: hidden; }
+  .sm-orbit { position: absolute; left: 50%; top: 34%; animation-name: gm-radar; animation-timing-function: linear; animation-iteration-count: infinite; }
+  .sm-orbit > span { position: absolute; left: 50%; top: 0; width: 5px; height: 5px; margin-left: -2.5px; border-radius: 50%; }
+
+  .sm-wrap { position: relative; z-index: 2; }
+  .sm-hero { max-width: 1040px; margin: 0 auto; padding: clamp(80px,12vh,150px) 22px clamp(30px,6vh,66px); text-align: center; }
+  .sm-kicker { font-family: 'Sora'; font-weight: 600; font-size: 12px; letter-spacing: .4em; text-transform: uppercase; color: #12b6ff; margin-bottom: 22px; }
+  .sm-wordmark { width: min(360px,66vw); margin: 0 auto 20px; }
+  .sm-wordmark .wm { width: 100%; height: auto; }
+  .sm-head { font-family: 'Sora'; font-weight: 800; font-size: clamp(42px,8.6vw,108px); line-height: .98; letter-spacing: -.03em; margin: 0; color: #f4f6ff; }
+  .sm-grad { background: linear-gradient(90deg,#3562ff,#12b6ff 55%,#7fd0ff); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gm-textsheen 5s linear infinite; }
+  .sm-sub { font-family: 'Sora'; font-weight: 400; font-size: clamp(16px,2.2vw,22px); line-height: 1.45; color: #9aa0b5; margin: 22px auto 0; max-width: 600px; }
+  .sm-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+  .sm-btn { font-family: 'Sora'; font-weight: 600; font-size: 15px; padding: 14px 30px; border-radius: 999px; transition: transform .2s, box-shadow .2s, background .2s; }
+  .sm-btn.primary { background: #3562ff; color: #fff; box-shadow: 0 10px 30px rgba(53,98,255,.4); }
+  .sm-btn.primary:hover { transform: translateY(-2px); box-shadow: 0 16px 44px rgba(53,98,255,.6); }
+  .sm-btn.ghost { border: 1px solid rgba(255,255,255,.28); color: #f4f6ff; }
+  .sm-btn.ghost:hover { background: rgba(255,255,255,.08); }
+  .sm-strip { display: flex; justify-content: center; flex-wrap: wrap; gap: 1px; margin: 44px auto 0; max-width: 620px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(53,98,255,.25); background: rgba(53,98,255,.16); }
+  .sm-strip-cell { background: #04050e; padding: 20px 30px; text-align: center; flex: 1; min-width: 150px; }
+  .sm-strip-v { font-family: 'Sora'; font-weight: 800; font-size: clamp(26px,3.4vw,42px); color: #f4f6ff; line-height: 1; } .sm-strip-v sup { font-size: .4em; color: #12b6ff; top: -1.1em; }
+  .sm-strip-l { font-family: 'Sora'; font-weight: 500; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #9aa0b5; margin-top: 8px; }
+
+  .sm-section { max-width: 1040px; margin: 0 auto; padding: clamp(30px,6vh,56px) 22px; }
+  .sm-sec-head { display: flex; align-items: baseline; gap: 14px; border-bottom: 1px solid rgba(53,98,255,.25); padding-bottom: 14px; margin-bottom: 16px; flex-wrap: wrap; }
+  .sm-sec-head h2 { font-family: 'Sora'; font-weight: 700; font-size: clamp(22px,3vw,34px); color: #f4f6ff; margin: 0; letter-spacing: -.01em; }
+  .sm-sec-head span { font-family: 'Sora'; font-weight: 600; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: #12b6ff; }
+  .sm-spec { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; padding: 17px 8px; border-bottom: 1px solid rgba(255,255,255,.06); transition: background .2s; }
+  .sm-spec:hover { background: rgba(53,98,255,.07); }
+  .sm-spec-role { font-family: 'Sora'; font-weight: 600; font-size: clamp(15px,1.8vw,19px); color: #f4f6ff; }
+  .sm-spec-sub { font-family: 'Sora'; font-size: 12px; line-height: 1.4; color: #9aa0b5; margin-top: 4px; }
+  .sm-spec-r { text-align: right; }
+  .sm-spec-v { font-family: 'Sora'; font-weight: 700; font-size: clamp(18px,2.4vw,26px); color: #12b6ff; line-height: 1; } .sm-spec-v sup { font-size: .4em; top: -1.1em; }
+  .sm-spec-vl { font-family: 'Sora'; font-size: 11px; color: #9aa0b5; margin-top: 6px; text-transform: uppercase; letter-spacing: .08em; }
+
+  .sm-models { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 14px; }
+  .sm-model { position: relative; border-radius: 22px; padding: 26px; background: linear-gradient(180deg,#0e1020,#04050e); border: 1px solid rgba(53,98,255,.2); overflow: hidden; transition: transform .35s var(--ease), border-color .35s, box-shadow .35s; }
+  .sm-model:hover { transform: translateY(-7px); border-color: rgba(53,98,255,.6); box-shadow: 0 26px 64px -12px rgba(53,98,255,.5); }
+  .sm-model-glow { position: absolute; top: -30%; right: -20%; width: 60%; height: 80%; background: radial-gradient(circle, rgba(18,182,255,.25), transparent 70%); pointer-events: none; }
+  .sm-model-n { position: relative; font-family: 'Sora'; font-weight: 600; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #12b6ff; }
+  .sm-model-title { position: relative; font-family: 'Sora'; font-weight: 600; font-size: clamp(19px,2.2vw,24px); line-height: 1.1; color: #f4f6ff; margin-top: 14px; }
+  .sm-model-metric { position: relative; font-family: 'Sora'; font-weight: 800; font-size: clamp(28px,3.4vw,40px); letter-spacing: -.02em; color: #f4f6ff; margin-top: 18px; line-height: 1; }
+  .sm-model-sub { position: relative; font-family: 'Sora'; font-size: 13px; line-height: 1.5; color: #9aa0b5; margin-top: 8px; }
+  .sm-foot-note { font-family: 'Sora'; font-size: 12px; line-height: 1.7; color: #5f6478; margin-top: 30px; }
+  .sm-extra { max-width: 1040px; margin: 0 auto; padding: 0 22px 120px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sm-swirl, .sm-stars, .sm-orbits, .sm-grad, .sm-boot-ring { animation: none !important; }
+    .sm-stars, .sm-orbits { display: none !important; }
+    .sm-grad { color: #12b6ff; }
+  }
+</style>

@@ -1,7 +1,7 @@
 # God Mode Portfolio — Mohamed Mahmoud
 
-One portfolio that fully transforms into **five distinct brand-styled worlds** — Razer, Disney+,
-Call of Duty, Netflix and Spotify — plus a neutral **Hub** that lets you choose an identity.
+One portfolio that fully transforms into **seven distinct brand-styled worlds** — Razer, Disney+,
+Call of Duty, Netflix, Spotify, Apple and Samsung — plus a neutral **Hub** that lets you choose an identity.
 Same real story, five completely different bodies: colors, type, motion, cursor and transitions all swap.
 
 > **A design tribute / style study — not affiliated with these brands.**
@@ -9,20 +9,22 @@ Same real story, five completely different bodies: colors, type, motion, cursor 
 
 **Live:** https://engineeringprojectswork-droid.github.io/god-mode-portfolio/
 
-## The five identities
+## The seven identities
 
 | Route | Framing | Signature motion |
 |---|---|---|
-| `/` | **God Mode** hub | Character-select of the five identities + hero number |
+| `/` | **God Mode** hub | Character-select of the seven identities + hero number |
 | `/razer` | **Mohamed // Loadout** | Chroma RGB sweep · scanline boot · grid parallax · border-trace · count-up · glitch |
 | `/disney` | **Mohamed Originals** | Castle + gold arc-sweep + fireworks boot · starfield parallax · shimmer-swipe reveals |
 | `/cod` | **Operator: Mohamed** | "DEPLOYING…" bar + coordinate typing · radar + blips · tracers · rain · target-lock · screen-shake |
 | `/netflix` | **Now Watching: Mohamed** | "Who's watching?" profile gate → zoom · Ken Burns billboard · rows · Top-10 |
 | `/spotify` | **This Is Mohamed** | Pinned now-playing bar · equalizer · morphing blob · text-sheen · color-bleed |
+| `/apple` | **Think Different** | Spotlight boot · floating orbs · gradient-sheen headline · glass cards · titanium operator card · bento builds |
+| `/samsung` | **Mohamed Ultra** | Power-on sweep boot · cosmic ring · orbiting particles · starfield · spec-sheet rows · glowing model cards |
 
 ## Stack & architecture
 
-- **Astro 5 + TypeScript** — static output, one content model → five skins.
+- **Astro 5 + TypeScript** — static output, one content model → seven skins.
 - **CSS-custom-property theme engine** — `[data-theme="…"]` swaps a full token set
   (`--bg`, `--accent`, `--font-d`, `--radius`, `--shadow`, …). See `src/styles/global.css`.
 - **Vanilla JS / Canvas motion** — IntersectionObserver reveals, `requestAnimationFrame`
@@ -37,7 +39,7 @@ Same real story, five completely different bodies: colors, type, motion, cursor 
 - `src/lib/themes.ts` — per-theme metadata + framing copy.
 - `src/lib/wordmarks.ts` — the five inline MOHAMED wordmarks.
 - `src/layouts/Base.astro` — shell, fonts, cursor, boot dismissal, reveal/count-up controller.
-- `src/components/{Hub,Netflix,Spotify,Razer,Cod,Disney}.astro` — the bespoke per-theme worlds.
+- `src/components/{Hub,Netflix,Spotify,Razer,Cod,Disney,Apple,Samsung}.astro` — the bespoke per-theme worlds.
 
 ## Content & truthfulness guardrails
 

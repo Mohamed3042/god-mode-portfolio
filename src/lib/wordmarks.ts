@@ -18,6 +18,10 @@ export const WORDMARKS: Record<ThemeId, string> = {
   netflix: `<svg class="wm" viewBox="0 0 660 168" role="img" aria-label="Mohamed" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wm-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF2A32"/><stop offset="1" stop-color="#A80009"/></linearGradient></defs><text x="10" y="132" font-family="'Anton',sans-serif" font-size="120" letter-spacing="1" fill="url(#wm-red)" transform="matrix(1,0,0,1.06,0,0)">MOHAMED</text></svg>`,
 
   spotify: `<svg class="wm" viewBox="0 0 700 138" role="img" aria-label="Mohamed" xmlns="http://www.w3.org/2000/svg"><text x="10" y="102" font-family="'Montserrat',sans-serif" font-weight="800" font-size="86" letter-spacing="-3" fill="#1DB954">MOHAMED</text><circle cx="648" cy="40" r="12" fill="#1DB954"/></svg>`,
+
+  apple: `<svg class="wm" viewBox="0 0 640 118" role="img" aria-label="Mohamed" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wm-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbfbfd"/><stop offset="1" stop-color="#b6b6bd"/></linearGradient></defs><text x="6" y="86" font-family="-apple-system,'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="600" font-size="86" letter-spacing="-4" fill="url(#wm-silver)">MOHAMED</text></svg>`,
+
+  samsung: `<svg class="wm" viewBox="0 0 700 118" role="img" aria-label="Mohamed" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wm-sam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f4f6ff"/><stop offset="1" stop-color="#3562ff"/></linearGradient></defs><text x="6" y="86" font-family="'Sora',sans-serif" font-weight="700" font-size="82" letter-spacing="1" fill="url(#wm-sam)">MOHAMED</text></svg>`,
 };
 
 export function wordmark(id: ThemeId): string {
