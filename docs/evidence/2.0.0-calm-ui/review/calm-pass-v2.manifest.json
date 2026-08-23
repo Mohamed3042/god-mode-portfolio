@@ -1,0 +1,213 @@
+{
+  "sheet_id": "god-mode-portfolio-calm-pass-v2",
+  "job": "God Mode Portfolio",
+  "tag": "calm-pass-v2",
+  "title": "God Mode Portfolio — calm pass 2.0 visual review",
+  "intro": "LEFT is the 1.0 baseline. RIGHT is the 2.0 calm pass. Answer only what you can see; ‘I can’t tell’ is always fine.",
+  "answers_dir": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/review",
+  "images": {
+    "hub_desktop_before": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/baseline/screens/hub-desktop-1440x900.png",
+    "hub_desktop_after": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/final/screens/hub-desktop-1440x900.png",
+    "hub_phone_before": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/baseline/screens/hub-phone-390x844.png",
+    "hub_phone_after": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/final/screens/hub-phone-390x844.png",
+    "razer_desktop_before": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/baseline/screens/razer-desktop-1440x900.png",
+    "razer_desktop_after": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/final/screens/razer-desktop-1440x900.png",
+    "disney_desktop_before": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/baseline/screens/disney-desktop-1440x900.png",
+    "disney_desktop_after": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/final/screens/disney-desktop-1440x900.png",
+    "cod_phone_before": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/baseline/screens/cod-phone-390x844.png",
+    "cod_phone_after": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/final/screens/cod-phone-390x844.png",
+    "netflix_phone_before": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/baseline/screens/netflix-phone-390x844.png",
+    "netflix_phone_after": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/final/screens/netflix-phone-390x844.png",
+    "spotify_desktop_before": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/baseline/screens/spotify-desktop-1440x900.png",
+    "spotify_desktop_after": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/final/screens/spotify-desktop-1440x900.png",
+    "apple_phone_before": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/baseline/screens/apple-phone-390x844.png",
+    "apple_phone_after": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/final/screens/apple-phone-390x844.png",
+    "samsung_desktop_before": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/baseline/screens/samsung-desktop-1440x900.png",
+    "samsung_desktop_after": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/final/screens/samsung-desktop-1440x900.png",
+    "samsung_phone_before": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/baseline/screens/samsung-phone-390x844.png",
+    "samsung_phone_after": "/Users/imac/src/god-mode-portfolio/docs/evidence/2.0.0-calm-ui/final/screens/samsung-phone-390x844.png"
+  },
+  "pairs": {
+    "hub_desktop": {"left": {"img": "hub_desktop_before", "label": "BEFORE — hub desktop"}, "right": {"img": "hub_desktop_after", "label": "AFTER — hub desktop"}, "diff": true},
+    "hub_phone": {"left": {"img": "hub_phone_before", "label": "BEFORE — hub phone"}, "right": {"img": "hub_phone_after", "label": "AFTER — hub phone"}, "diff": true},
+    "razer_desktop": {"left": {"img": "razer_desktop_before", "label": "BEFORE — Razer desktop"}, "right": {"img": "razer_desktop_after", "label": "AFTER — Razer desktop"}, "diff": true},
+    "disney_desktop": {"left": {"img": "disney_desktop_before", "label": "BEFORE — Disney+ desktop"}, "right": {"img": "disney_desktop_after", "label": "AFTER — Disney+ desktop"}, "diff": true},
+    "cod_phone": {"left": {"img": "cod_phone_before", "label": "BEFORE — Call of Duty phone"}, "right": {"img": "cod_phone_after", "label": "AFTER — Call of Duty phone"}, "diff": true},
+    "netflix_phone": {"left": {"img": "netflix_phone_before", "label": "BEFORE — Netflix phone"}, "right": {"img": "netflix_phone_after", "label": "AFTER — Netflix phone"}, "diff": true},
+    "spotify_desktop": {"left": {"img": "spotify_desktop_before", "label": "BEFORE — Spotify desktop"}, "right": {"img": "spotify_desktop_after", "label": "AFTER — Spotify desktop"}, "diff": true},
+    "apple_phone": {"left": {"img": "apple_phone_before", "label": "BEFORE — Apple phone"}, "right": {"img": "apple_phone_after", "label": "AFTER — Apple phone"}, "diff": true},
+    "samsung_desktop": {"left": {"img": "samsung_desktop_before", "label": "BEFORE — Samsung desktop"}, "right": {"img": "samsung_desktop_after", "label": "AFTER — Samsung desktop"}, "diff": true},
+    "samsung_phone": {"left": {"img": "samsung_phone_before", "label": "BEFORE — Samsung phone"}, "right": {"img": "samsung_phone_after", "label": "AFTER — Samsung phone"}, "diff": true}
+  },
+  "questions": [
+    {
+      "id": "q01", "intent": "calm_hierarchy", "type": "single", "pair": "hub_desktop",
+      "text": "Look at the FIRST SCREEN only. Which side makes the first task — choosing a world — clearer?",
+      "choices": [
+        {"id": "left", "label": "LEFT is clearer", "score": -1},
+        {"id": "right", "label": "RIGHT is clearer", "score": 1},
+        {"id": "same", "label": "Same clarity", "score": -1}
+      ]
+    },
+    {
+      "id": "q02", "intent": "calm_hierarchy", "type": "single", "pair": "hub_phone",
+      "text": "On the PHONE view, which side has fewer things competing for attention before the identity choices?",
+      "choices": [
+        {"id": "left", "label": "LEFT has fewer", "score": -1},
+        {"id": "right", "label": "RIGHT has fewer", "score": 1},
+        {"id": "same", "label": "Same amount", "score": -1}
+      ]
+    },
+    {
+      "id": "q03", "intent": "calm_hierarchy", "type": "single", "pair": "hub_desktop", "view": "ab", "reverse": true,
+      "text": "Press Space to flip A/B. Does the AFTER screen feel BUSIER or more crowded than BEFORE?",
+      "choices": [
+        {"id": "yes", "label": "Yes — AFTER is busier", "score": -1},
+        {"id": "same", "label": "They feel equally busy", "score": -1},
+        {"id": "no", "label": "No — AFTER is calmer", "score": 1}
+      ]
+    },
+    {
+      "id": "q04", "intent": "calm_hierarchy", "type": "single", "pair": "disney_desktop",
+      "text": "On the Disney+ screen, which side is easier to scan from name → promise → proof → action?",
+      "choices": [
+        {"id": "left", "label": "LEFT is easier", "score": -1},
+        {"id": "right", "label": "RIGHT is easier", "score": 1},
+        {"id": "same", "label": "Same", "score": -1}
+      ]
+    },
+    {
+      "id": "q05", "intent": "calm_hierarchy", "type": "mark", "pair": "hub_desktop", "panel": "right",
+      "text": "Mark any place on the AFTER hub where the reading order is unclear.",
+      "none_label": "The reading order is clear"
+    },
+    {
+      "id": "q06", "intent": "navigation_fit", "type": "single", "pair": "hub_desktop",
+      "text": "Look at the TOP navigation only. Which side is quieter while still showing where to go?",
+      "choices": [
+        {"id": "left", "label": "LEFT is quieter", "score": -1},
+        {"id": "right", "label": "RIGHT is quieter", "score": 1},
+        {"id": "same", "label": "Same", "score": -1}
+      ]
+    },
+    {
+      "id": "q07", "intent": "navigation_fit", "type": "single", "pair": "hub_phone",
+      "text": "On the AFTER phone screen, does the TOP navigation fit without labels overlapping or leaving the screen?",
+      "choices": [
+        {"id": "yes", "label": "Yes — it fits", "score": 1},
+        {"id": "mostly", "label": "Mostly — one tight spot", "score": 0},
+        {"id": "no", "label": "No — something overlaps or escapes", "score": -1}
+      ]
+    },
+    {
+      "id": "q08", "intent": "navigation_fit", "type": "single", "pair": "razer_desktop", "reverse": true,
+      "text": "Does the AFTER top bar show too many choices at the same time?",
+      "choices": [
+        {"id": "yes", "label": "Yes — too many", "score": -1},
+        {"id": "no", "label": "No — the amount is right", "score": 1}
+      ]
+    },
+    {
+      "id": "q09", "intent": "navigation_fit", "type": "single", "pair": "netflix_phone",
+      "text": "On the AFTER phone screen, are the current world and the question ‘Who is he, in this voice?’ easy to find?",
+      "choices": [
+        {"id": "yes", "label": "Yes — both are easy to find", "score": 1},
+        {"id": "one", "label": "Only one is easy to find", "score": 0},
+        {"id": "no", "label": "No — neither is clear", "score": -1}
+      ]
+    },
+    {
+      "id": "q10", "intent": "navigation_fit", "type": "mark", "pair": "hub_phone", "panel": "right",
+      "text": "Mark anything in the AFTER phone navigation that looks hard to tap or understand.",
+      "none_label": "Nothing looks hard to use"
+    },
+    {
+      "id": "q11", "intent": "identity_fidelity", "type": "single", "pair": "razer_desktop",
+      "text": "Does the AFTER screen still read immediately as the green Razer / gaming world?",
+      "choices": [
+        {"id": "yes", "label": "Yes — immediately", "score": 1},
+        {"id": "mostly", "label": "Mostly", "score": 0},
+        {"id": "no", "label": "No — the identity is weak", "score": -1}
+      ]
+    },
+    {
+      "id": "q12", "intent": "identity_fidelity", "type": "single", "pair": "disney_desktop",
+      "text": "Does the AFTER screen still read immediately as the royal Disney+ world?",
+      "choices": [
+        {"id": "yes", "label": "Yes — immediately", "score": 1},
+        {"id": "mostly", "label": "Mostly", "score": 0},
+        {"id": "no", "label": "No — the identity is weak", "score": -1}
+      ]
+    },
+    {
+      "id": "q13", "intent": "identity_fidelity", "type": "single", "pair": "spotify_desktop",
+      "text": "Does the AFTER screen still read immediately as the Spotify / artist world?",
+      "choices": [
+        {"id": "yes", "label": "Yes — immediately", "score": 1},
+        {"id": "mostly", "label": "Mostly", "score": 0},
+        {"id": "no", "label": "No — the identity is weak", "score": -1}
+      ]
+    },
+    {
+      "id": "q14", "intent": "identity_fidelity", "type": "single", "pair": "apple_phone", "reverse": true,
+      "text": "Did the AFTER screen lose the clean Apple-keynote personality that BEFORE had?",
+      "choices": [
+        {"id": "yes", "label": "Yes — it lost the personality", "score": -1},
+        {"id": "no", "label": "No — the personality remains", "score": 1}
+      ]
+    },
+    {
+      "id": "q15", "intent": "identity_fidelity", "type": "single", "pair": "samsung_desktop",
+      "text": "Does the AFTER screen still feel distinct from the Apple screen — cosmic Samsung rather than keynote Apple?",
+      "choices": [
+        {"id": "yes", "label": "Yes — clearly distinct", "score": 1},
+        {"id": "mostly", "label": "Mostly distinct", "score": 0},
+        {"id": "no", "label": "No — they feel too similar", "score": -1}
+      ]
+    },
+    {
+      "id": "q16", "intent": "content_integrity", "type": "single", "pair": "samsung_desktop",
+      "text": "On the AFTER proof row, can you read the complete values ‘1,000,000+’, ‘$0.84’, and ‘1’?",
+      "choices": [
+        {"id": "all", "label": "Yes — all three are complete", "score": 1},
+        {"id": "some", "label": "Only some are complete", "score": 0},
+        {"id": "none", "label": "No — values are cut off", "score": -1}
+      ]
+    },
+    {
+      "id": "q17", "intent": "content_integrity", "type": "single", "pair": "samsung_phone",
+      "text": "On the AFTER phone proof card, are every number and label inside their boxes?",
+      "choices": [
+        {"id": "yes", "label": "Yes — everything stays inside", "score": 1},
+        {"id": "mostly", "label": "Mostly — one tight spot", "score": 0},
+        {"id": "no", "label": "No — something is clipped", "score": -1}
+      ]
+    },
+    {
+      "id": "q18", "intent": "content_integrity", "type": "single", "pair": "netflix_phone",
+      "text": "On the AFTER Netflix screen, is the proof sentence below ‘Now Watching’ easy to read without decoding it?",
+      "choices": [
+        {"id": "yes", "label": "Yes — easy to read", "score": 1},
+        {"id": "mostly", "label": "Mostly", "score": 0},
+        {"id": "no", "label": "No — hard to read", "score": -1}
+      ]
+    },
+    {
+      "id": "q19", "intent": "content_integrity", "type": "single", "pair": "cod_phone", "reverse": true,
+      "text": "Does the AFTER Call of Duty phone screen show any broken, missing, or cut-off proof number?",
+      "choices": [
+        {"id": "yes", "label": "Yes — a proof number is broken", "score": -1},
+        {"id": "no", "label": "No — every proof number is intact", "score": 1}
+      ]
+    },
+    {
+      "id": "q20", "intent": "content_integrity", "type": "mark", "pair": "samsung_phone", "panel": "right",
+      "text": "Mark any text or number on the AFTER phone screen that is clipped, broken, or hard to read.",
+      "none_label": "Nothing is clipped or hard to read"
+    },
+    {
+      "id": "q21", "intent": "anything_else", "type": "text", "pair": "hub_desktop",
+      "text": "Anything else you noticed in the calm pass? (optional)"
+    }
+  ]
+}

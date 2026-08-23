@@ -1,0 +1,5660 @@
+{
+  "schema": 1,
+  "mode": "baseline",
+  "generatedAt": "2026-08-23T09:08:07.549Z",
+  "baseUrl": "http://127.0.0.1:4321/god-mode-portfolio",
+  "chromePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "routes": [
+    {
+      "id": "hub",
+      "url": "http://127.0.0.1:4321/god-mode-portfolio/",
+      "viewports": {
+        "phone": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/",
+          "viewport": {
+            "width": 390,
+            "height": 844,
+            "visualWidth": 390,
+            "visualHeight": 844
+          },
+          "explicitBlocks": 0,
+          "blockCount": 8,
+          "blockLabels": [
+            "gm-kicker rv in",
+            "gm-wordmark rv in",
+            "gm-banner rv in",
+            "gm-lede rv in",
+            "gm-lede rv in",
+            "gm-herostats",
+            "gm-cta rv in",
+            "identities"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 23,
+          "countups": [
+            {
+              "text": "1,000,000+",
+              "raw": "1000000",
+              "prefix": "",
+              "suffix": "+"
+            },
+            {
+              "text": "$0.84",
+              "raw": "0.84",
+              "prefix": "$",
+              "suffix": ""
+            },
+            {
+              "text": "1",
+              "raw": "1",
+              "prefix": "",
+              "suffix": ""
+            }
+          ],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#systems",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/#systems",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/hub.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Mohamed Mahmoud — God Mode Portfolio",
+          "lang": "en"
+        },
+        "desktop": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "visualWidth": 1440,
+            "visualHeight": 900
+          },
+          "explicitBlocks": 0,
+          "blockCount": 8,
+          "blockLabels": [
+            "gm-kicker rv in",
+            "gm-wordmark rv in",
+            "gm-banner rv in",
+            "gm-lede rv in",
+            "gm-lede rv in",
+            "gm-herostats",
+            "gm-cta rv in",
+            "identities"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 23,
+          "countups": [
+            {
+              "text": "1,000,000+",
+              "raw": "1000000",
+              "prefix": "",
+              "suffix": "+"
+            },
+            {
+              "text": "$0.84",
+              "raw": "0.84",
+              "prefix": "$",
+              "suffix": ""
+            },
+            {
+              "text": "1",
+              "raw": "1",
+              "prefix": "",
+              "suffix": ""
+            }
+          ],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#systems",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/#systems",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/hub.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Mohamed Mahmoud — God Mode Portfolio",
+          "lang": "en"
+        }
+      },
+      "reducedMotion": {
+        "url": "http://127.0.0.1:4321/god-mode-portfolio/",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "visualWidth": 390,
+          "visualHeight": 844
+        },
+        "explicitBlocks": 0,
+        "blockCount": 9,
+        "blockLabels": [
+          "gm-kicker rv in",
+          "gm-wordmark rv in",
+          "gm-banner rv in",
+          "gm-lede rv in",
+          "gm-lede rv in",
+          "gm-herostats",
+          "gm-cta rv in",
+          "identities",
+          "hub-card rv d1 in"
+        ],
+        "navCount": 8,
+        "navLabels": [
+          "◇ Hub",
+          "Razer",
+          "Disney+",
+          "Call of Duty",
+          "Netflix",
+          "Spotify",
+          "Apple",
+          "Samsung"
+        ],
+        "menuRouteCount": 0,
+        "strip": null,
+        "question": "",
+        "horizontalOverflow": 0,
+        "runningAnimations": [],
+        "reducedMotion": true,
+        "bootVisible": false,
+        "hiddenRevealCount": 0,
+        "countups": [
+          {
+            "text": "1000000",
+            "raw": "1000000",
+            "prefix": "",
+            "suffix": "+"
+          },
+          {
+            "text": "0.84",
+            "raw": "0.84",
+            "prefix": "$",
+            "suffix": ""
+          },
+          {
+            "text": "1",
+            "raw": "1",
+            "prefix": "",
+            "suffix": ""
+          }
+        ],
+        "links": [
+          {
+            "raw": "/god-mode-portfolio/",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/razer",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/disney",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/cod",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/netflix",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/spotify",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/apple",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/samsung",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#systems",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/#systems",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "mailto:medo433447@gmail.com",
+            "href": "mailto:medo433447@gmail.com",
+            "protocol": "mailto:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/razer",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/disney",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/cod",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/netflix",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/spotify",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/apple",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/samsung",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "mailto:medo433447@gmail.com",
+            "href": "mailto:medo433447@gmail.com",
+            "protocol": "mailto:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "tel:+96599338996",
+            "href": "tel:+96599338996",
+            "protocol": "tel:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "protocol": "https:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          }
+        ],
+        "canonical": "",
+        "ogUrl": "",
+        "ogImage": "/god-mode-portfolio/og/hub.svg",
+        "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+        "title": "Mohamed Mahmoud — God Mode Portfolio",
+        "lang": "en"
+      }
+    },
+    {
+      "id": "razer",
+      "url": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+      "viewports": {
+        "phone": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+          "viewport": {
+            "width": 390,
+            "height": 844,
+            "visualWidth": 390,
+            "visualHeight": 844
+          },
+          "explicitBlocks": 0,
+          "blockCount": 7,
+          "blockLabels": [
+            "rz-kicker rv in",
+            "rz-wordmark rv in",
+            "rz-banner rv in",
+            "rz-lede rv in",
+            "rz-hud rv in",
+            "rz-bench",
+            "rz-cta rv in"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [
+            "gm-chroma",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse"
+          ],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 16,
+          "countups": [
+            {
+              "text": "1,000,000+",
+              "raw": "1000000",
+              "prefix": "",
+              "suffix": "+"
+            },
+            {
+              "text": "$0.84",
+              "raw": "0.84",
+              "prefix": "$",
+              "suffix": ""
+            },
+            {
+              "text": "1",
+              "raw": "1",
+              "prefix": "",
+              "suffix": ""
+            },
+            {
+              "text": "$0.84",
+              "raw": "0.84",
+              "prefix": "$",
+              "suffix": ""
+            },
+            {
+              "text": "254",
+              "raw": "254",
+              "prefix": "",
+              "suffix": ""
+            },
+            {
+              "text": "45",
+              "raw": "45",
+              "prefix": "",
+              "suffix": ""
+            },
+            {
+              "text": "30",
+              "raw": "30",
+              "prefix": "",
+              "suffix": ""
+            },
+            {
+              "text": "7",
+              "raw": "7",
+              "prefix": "",
+              "suffix": ""
+            }
+          ],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#rz-specs",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer#rz-specs",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/razer.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Mohamed // Loadout — God Mode Portfolio",
+          "lang": "en"
+        },
+        "desktop": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "visualWidth": 1440,
+            "visualHeight": 900
+          },
+          "explicitBlocks": 0,
+          "blockCount": 8,
+          "blockLabels": [
+            "rz-kicker rv in",
+            "rz-wordmark rv in",
+            "rz-banner rv in",
+            "rz-lede rv in",
+            "rz-hud rv in",
+            "rz-bench",
+            "rz-cta rv in",
+            "rz-specs"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [
+            "unnamed",
+            "unnamed",
+            "unnamed",
+            "gm-chroma",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse",
+            "rz-pulse"
+          ],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 12,
+          "countups": [
+            {
+              "text": "1,000,000+",
+              "raw": "1000000",
+              "prefix": "",
+              "suffix": "+"
+            },
+            {
+              "text": "$0.84",
+              "raw": "0.84",
+              "prefix": "$",
+              "suffix": ""
+            },
+            {
+              "text": "1",
+              "raw": "1",
+              "prefix": "",
+              "suffix": ""
+            },
+            {
+              "text": "$0.84",
+              "raw": "0.84",
+              "prefix": "$",
+              "suffix": ""
+            },
+            {
+              "text": "254",
+              "raw": "254",
+              "prefix": "",
+              "suffix": ""
+            },
+            {
+              "text": "45",
+              "raw": "45",
+              "prefix": "",
+              "suffix": ""
+            },
+            {
+              "text": "30",
+              "raw": "30",
+              "prefix": "",
+              "suffix": ""
+            },
+            {
+              "text": "7",
+              "raw": "7",
+              "prefix": "",
+              "suffix": ""
+            }
+          ],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#rz-specs",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer#rz-specs",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/razer.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Mohamed // Loadout — God Mode Portfolio",
+          "lang": "en"
+        }
+      },
+      "reducedMotion": {
+        "url": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "visualWidth": 390,
+          "visualHeight": 844
+        },
+        "explicitBlocks": 0,
+        "blockCount": 7,
+        "blockLabels": [
+          "rz-kicker rv in",
+          "rz-wordmark rv in",
+          "rz-banner rv in",
+          "rz-lede rv in",
+          "rz-hud rv in",
+          "rz-bench",
+          "rz-cta rv in"
+        ],
+        "navCount": 8,
+        "navLabels": [
+          "◇ Hub",
+          "Razer",
+          "Disney+",
+          "Call of Duty",
+          "Netflix",
+          "Spotify",
+          "Apple",
+          "Samsung"
+        ],
+        "menuRouteCount": 0,
+        "strip": null,
+        "question": "",
+        "horizontalOverflow": 0,
+        "runningAnimations": [],
+        "reducedMotion": true,
+        "bootVisible": false,
+        "hiddenRevealCount": 0,
+        "countups": [
+          {
+            "text": "1000000",
+            "raw": "1000000",
+            "prefix": "",
+            "suffix": "+"
+          },
+          {
+            "text": "0.84",
+            "raw": "0.84",
+            "prefix": "$",
+            "suffix": ""
+          },
+          {
+            "text": "1",
+            "raw": "1",
+            "prefix": "",
+            "suffix": ""
+          },
+          {
+            "text": "0.84",
+            "raw": "0.84",
+            "prefix": "$",
+            "suffix": ""
+          },
+          {
+            "text": "254",
+            "raw": "254",
+            "prefix": "",
+            "suffix": ""
+          },
+          {
+            "text": "45",
+            "raw": "45",
+            "prefix": "",
+            "suffix": ""
+          },
+          {
+            "text": "30",
+            "raw": "30",
+            "prefix": "",
+            "suffix": ""
+          },
+          {
+            "text": "7",
+            "raw": "7",
+            "prefix": "",
+            "suffix": ""
+          }
+        ],
+        "links": [
+          {
+            "raw": "/god-mode-portfolio/",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/razer",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/disney",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/cod",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/netflix",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/spotify",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/apple",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/samsung",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#rz-specs",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/razer#rz-specs",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "mailto:medo433447@gmail.com",
+            "href": "mailto:medo433447@gmail.com",
+            "protocol": "mailto:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "mailto:medo433447@gmail.com",
+            "href": "mailto:medo433447@gmail.com",
+            "protocol": "mailto:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "tel:+96599338996",
+            "href": "tel:+96599338996",
+            "protocol": "tel:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "protocol": "https:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          }
+        ],
+        "canonical": "",
+        "ogUrl": "",
+        "ogImage": "/god-mode-portfolio/og/razer.svg",
+        "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+        "title": "Mohamed // Loadout — God Mode Portfolio",
+        "lang": "en"
+      }
+    },
+    {
+      "id": "disney",
+      "url": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+      "viewports": {
+        "phone": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+          "viewport": {
+            "width": 390,
+            "height": 844,
+            "visualWidth": 390,
+            "visualHeight": 844
+          },
+          "explicitBlocks": 0,
+          "blockCount": 6,
+          "blockLabels": [
+            "dz-kicker rv in",
+            "dz-wordmark rv in",
+            "dz-banner rv in",
+            "dz-logline rv in",
+            "dz-rating rv in",
+            "dz-cta rv in"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 16,
+          "countups": [],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#dz-originals",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney#dz-originals",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/disney.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Mohamed Originals — God Mode Portfolio",
+          "lang": "en"
+        },
+        "desktop": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "visualWidth": 1440,
+            "visualHeight": 900
+          },
+          "explicitBlocks": 0,
+          "blockCount": 6,
+          "blockLabels": [
+            "dz-kicker rv in",
+            "dz-wordmark rv in",
+            "dz-banner rv in",
+            "dz-logline rv in",
+            "dz-rating rv in",
+            "dz-cta rv in"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 16,
+          "countups": [],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#dz-originals",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney#dz-originals",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/disney.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Mohamed Originals — God Mode Portfolio",
+          "lang": "en"
+        }
+      },
+      "reducedMotion": {
+        "url": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "visualWidth": 390,
+          "visualHeight": 844
+        },
+        "explicitBlocks": 0,
+        "blockCount": 7,
+        "blockLabels": [
+          "dz-kicker rv in",
+          "dz-wordmark rv in",
+          "dz-banner rv in",
+          "dz-logline rv in",
+          "dz-rating rv in",
+          "dz-cta rv in",
+          "dz-originals"
+        ],
+        "navCount": 8,
+        "navLabels": [
+          "◇ Hub",
+          "Razer",
+          "Disney+",
+          "Call of Duty",
+          "Netflix",
+          "Spotify",
+          "Apple",
+          "Samsung"
+        ],
+        "menuRouteCount": 0,
+        "strip": null,
+        "question": "",
+        "horizontalOverflow": 0,
+        "runningAnimations": [],
+        "reducedMotion": true,
+        "bootVisible": false,
+        "hiddenRevealCount": 0,
+        "countups": [],
+        "links": [
+          {
+            "raw": "/god-mode-portfolio/",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/razer",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/disney",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/cod",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/netflix",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/spotify",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/apple",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/samsung",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#dz-originals",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/disney#dz-originals",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "mailto:medo433447@gmail.com",
+            "href": "mailto:medo433447@gmail.com",
+            "protocol": "mailto:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "mailto:medo433447@gmail.com",
+            "href": "mailto:medo433447@gmail.com",
+            "protocol": "mailto:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "tel:+96599338996",
+            "href": "tel:+96599338996",
+            "protocol": "tel:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "protocol": "https:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          }
+        ],
+        "canonical": "",
+        "ogUrl": "",
+        "ogImage": "/god-mode-portfolio/og/disney.svg",
+        "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+        "title": "Mohamed Originals — God Mode Portfolio",
+        "lang": "en"
+      }
+    },
+    {
+      "id": "cod",
+      "url": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+      "viewports": {
+        "phone": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+          "viewport": {
+            "width": 390,
+            "height": 844,
+            "visualWidth": 390,
+            "visualHeight": 844
+          },
+          "explicitBlocks": 0,
+          "blockCount": 9,
+          "blockLabels": [
+            "cod-file-head",
+            "cod-radar",
+            "cod-kicker rv in",
+            "cod-wordmark rv in",
+            "cod-banner rv in",
+            "cod-lede rv in",
+            "cod-killstreak rv in",
+            "cod-stats",
+            "cod-cta rv in"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [
+            "gm-rain",
+            "gm-tracer",
+            "gm-tracer",
+            "gm-tracer",
+            "gm-radar",
+            "gm-blip",
+            "gm-blip",
+            "gm-blip"
+          ],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 15,
+          "countups": [],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/cod.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Operator: Mohamed — God Mode Portfolio",
+          "lang": "en"
+        },
+        "desktop": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "visualWidth": 1440,
+            "visualHeight": 900
+          },
+          "explicitBlocks": 0,
+          "blockCount": 9,
+          "blockLabels": [
+            "cod-file-head",
+            "cod-radar",
+            "cod-kicker rv in",
+            "cod-wordmark rv in",
+            "cod-banner rv in",
+            "cod-lede rv in",
+            "cod-killstreak rv in",
+            "cod-stats",
+            "cod-cta rv in"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [
+            "unnamed",
+            "unnamed",
+            "unnamed",
+            "gm-rain",
+            "gm-tracer",
+            "gm-tracer",
+            "gm-tracer",
+            "gm-radar",
+            "gm-blip",
+            "gm-blip",
+            "gm-blip"
+          ],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 12,
+          "countups": [],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/cod.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Operator: Mohamed — God Mode Portfolio",
+          "lang": "en"
+        }
+      },
+      "reducedMotion": {
+        "url": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "visualWidth": 390,
+          "visualHeight": 844
+        },
+        "explicitBlocks": 0,
+        "blockCount": 9,
+        "blockLabels": [
+          "cod-file-head",
+          "cod-radar",
+          "cod-kicker rv in",
+          "cod-wordmark rv in",
+          "cod-banner rv in",
+          "cod-lede rv in",
+          "cod-killstreak rv in",
+          "cod-stats",
+          "cod-cta rv in"
+        ],
+        "navCount": 8,
+        "navLabels": [
+          "◇ Hub",
+          "Razer",
+          "Disney+",
+          "Call of Duty",
+          "Netflix",
+          "Spotify",
+          "Apple",
+          "Samsung"
+        ],
+        "menuRouteCount": 0,
+        "strip": null,
+        "question": "",
+        "horizontalOverflow": 0,
+        "runningAnimations": [],
+        "reducedMotion": true,
+        "bootVisible": false,
+        "hiddenRevealCount": 0,
+        "countups": [],
+        "links": [
+          {
+            "raw": "/god-mode-portfolio/",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/razer",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/disney",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/cod",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/netflix",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/spotify",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/apple",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/samsung",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "mailto:medo433447@gmail.com",
+            "href": "mailto:medo433447@gmail.com",
+            "protocol": "mailto:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "mailto:medo433447@gmail.com",
+            "href": "mailto:medo433447@gmail.com",
+            "protocol": "mailto:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "tel:+96599338996",
+            "href": "tel:+96599338996",
+            "protocol": "tel:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "protocol": "https:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          }
+        ],
+        "canonical": "",
+        "ogUrl": "",
+        "ogImage": "/god-mode-portfolio/og/cod.svg",
+        "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+        "title": "Operator: Mohamed — God Mode Portfolio",
+        "lang": "en"
+      }
+    },
+    {
+      "id": "netflix",
+      "url": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+      "viewports": {
+        "phone": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+          "viewport": {
+            "width": 390,
+            "height": 844,
+            "visualWidth": 390,
+            "visualHeight": 844
+          },
+          "explicitBlocks": 0,
+          "blockCount": 8,
+          "blockLabels": [
+            "nf-ribbon",
+            "nf-kicker rv in",
+            "nf-wordmark rv in",
+            "nf-banner rv in",
+            "nf-logline rv in",
+            "nf-meta rv in",
+            "nf-cta rv in",
+            "nf-rows"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [
+            "gm-kenburns",
+            "gm-spot"
+          ],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 15,
+          "countups": [],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#nf-rows",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix#nf-rows",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/netflix.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Now Watching: Mohamed — God Mode Portfolio",
+          "lang": "en"
+        },
+        "desktop": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "visualWidth": 1440,
+            "visualHeight": 900
+          },
+          "explicitBlocks": 0,
+          "blockCount": 8,
+          "blockLabels": [
+            "nf-ribbon",
+            "nf-kicker rv in",
+            "nf-wordmark rv in",
+            "nf-banner rv in",
+            "nf-logline rv in",
+            "nf-meta rv in",
+            "nf-cta rv in",
+            "nf-rows"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [
+            "gm-kenburns",
+            "gm-spot"
+          ],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 16,
+          "countups": [],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#nf-rows",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix#nf-rows",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/netflix.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Now Watching: Mohamed — God Mode Portfolio",
+          "lang": "en"
+        }
+      },
+      "reducedMotion": {
+        "url": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "visualWidth": 390,
+          "visualHeight": 844
+        },
+        "explicitBlocks": 0,
+        "blockCount": 8,
+        "blockLabels": [
+          "nf-ribbon",
+          "nf-kicker rv in",
+          "nf-wordmark rv in",
+          "nf-banner rv in",
+          "nf-logline rv in",
+          "nf-meta rv in",
+          "nf-cta rv in",
+          "nf-rows"
+        ],
+        "navCount": 8,
+        "navLabels": [
+          "◇ Hub",
+          "Razer",
+          "Disney+",
+          "Call of Duty",
+          "Netflix",
+          "Spotify",
+          "Apple",
+          "Samsung"
+        ],
+        "menuRouteCount": 0,
+        "strip": null,
+        "question": "",
+        "horizontalOverflow": 0,
+        "runningAnimations": [],
+        "reducedMotion": true,
+        "bootVisible": false,
+        "hiddenRevealCount": 0,
+        "countups": [],
+        "links": [
+          {
+            "raw": "/god-mode-portfolio/",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/razer",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/disney",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/cod",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/netflix",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/spotify",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/apple",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/samsung",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#nf-rows",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix#nf-rows",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "mailto:medo433447@gmail.com",
+            "href": "mailto:medo433447@gmail.com",
+            "protocol": "mailto:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "mailto:medo433447@gmail.com",
+            "href": "mailto:medo433447@gmail.com",
+            "protocol": "mailto:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "tel:+96599338996",
+            "href": "tel:+96599338996",
+            "protocol": "tel:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "protocol": "https:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          }
+        ],
+        "canonical": "",
+        "ogUrl": "",
+        "ogImage": "/god-mode-portfolio/og/netflix.svg",
+        "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+        "title": "Now Watching: Mohamed — God Mode Portfolio",
+        "lang": "en"
+      }
+    },
+    {
+      "id": "spotify",
+      "url": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+      "viewports": {
+        "phone": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+          "viewport": {
+            "width": 390,
+            "height": 844,
+            "visualWidth": 390,
+            "visualHeight": 844
+          },
+          "explicitBlocks": 0,
+          "blockCount": 7,
+          "blockLabels": [
+            "sp-avatar",
+            "sp-verified rv in",
+            "sp-title rv in",
+            "sp-listeners rv in",
+            "sp-tagline rv in",
+            "sp-controls rv in",
+            "sp-tracks"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [
+            "gm-morph",
+            "gm-textsheen",
+            "gm-eq",
+            "gm-eq",
+            "gm-eq",
+            "gm-eq",
+            "gm-eq",
+            "gm-progress"
+          ],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 17,
+          "countups": [
+            {
+              "text": "1,000,000+",
+              "raw": "1000000",
+              "prefix": "",
+              "suffix": "+"
+            }
+          ],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-main",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-main",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-main",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-main",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-main",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-main",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-tracks",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-tracks",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-tracks",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-tracks",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-tracks",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-tracks",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/spotify.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "This Is Mohamed — God Mode Portfolio",
+          "lang": "en"
+        },
+        "desktop": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "visualWidth": 1440,
+            "visualHeight": 900
+          },
+          "explicitBlocks": 0,
+          "blockCount": 8,
+          "blockLabels": [
+            "sp-sidebar",
+            "sp-avatar",
+            "sp-verified rv in",
+            "sp-title rv in",
+            "sp-listeners rv in",
+            "sp-tagline rv in",
+            "sp-controls rv in",
+            "sp-tracks"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [
+            "gm-morph",
+            "gm-textsheen",
+            "gm-eq",
+            "gm-eq",
+            "gm-eq",
+            "gm-eq",
+            "gm-eq",
+            "gm-progress"
+          ],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 13,
+          "countups": [
+            {
+              "text": "1,000,000+",
+              "raw": "1000000",
+              "prefix": "",
+              "suffix": "+"
+            }
+          ],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-main",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-main",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-main",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-main",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-main",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-main",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-tracks",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-tracks",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-tracks",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-tracks",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-tracks",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sp-tracks",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/spotify.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "This Is Mohamed — God Mode Portfolio",
+          "lang": "en"
+        }
+      },
+      "reducedMotion": {
+        "url": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "visualWidth": 390,
+          "visualHeight": 844
+        },
+        "explicitBlocks": 0,
+        "blockCount": 7,
+        "blockLabels": [
+          "sp-avatar",
+          "sp-verified rv in",
+          "sp-title rv in",
+          "sp-listeners rv in",
+          "sp-tagline rv in",
+          "sp-controls rv in",
+          "sp-tracks"
+        ],
+        "navCount": 8,
+        "navLabels": [
+          "◇ Hub",
+          "Razer",
+          "Disney+",
+          "Call of Duty",
+          "Netflix",
+          "Spotify",
+          "Apple",
+          "Samsung"
+        ],
+        "menuRouteCount": 0,
+        "strip": null,
+        "question": "",
+        "horizontalOverflow": 0,
+        "runningAnimations": [],
+        "reducedMotion": true,
+        "bootVisible": false,
+        "hiddenRevealCount": 0,
+        "countups": [
+          {
+            "text": "1000000",
+            "raw": "1000000",
+            "prefix": "",
+            "suffix": "+"
+          }
+        ],
+        "links": [
+          {
+            "raw": "/god-mode-portfolio/",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/razer",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/disney",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/cod",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/netflix",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/spotify",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/apple",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/samsung",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#sp-main",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-main",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#sp-main",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-main",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#sp-main",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-main",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#sp-tracks",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#sp-tracks",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#sp-tracks",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#sp-tracks",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#sp-tracks",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#sp-tracks",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify#sp-tracks",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "protocol": "https:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "mailto:medo433447@gmail.com",
+            "href": "mailto:medo433447@gmail.com",
+            "protocol": "mailto:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "tel:+96599338996",
+            "href": "tel:+96599338996",
+            "protocol": "tel:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "protocol": "https:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          }
+        ],
+        "canonical": "",
+        "ogUrl": "",
+        "ogImage": "/god-mode-portfolio/og/spotify.svg",
+        "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+        "title": "This Is Mohamed — God Mode Portfolio",
+        "lang": "en"
+      }
+    },
+    {
+      "id": "apple",
+      "url": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+      "viewports": {
+        "phone": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+          "viewport": {
+            "width": 390,
+            "height": 844,
+            "visualWidth": 390,
+            "visualHeight": 844
+          },
+          "explicitBlocks": 0,
+          "blockCount": 6,
+          "blockLabels": [
+            "ap-wordmark rv in",
+            "ap-head rv in",
+            "ap-sub rv in",
+            "ap-links rv in",
+            "ap-keynote rv in",
+            "ap-team"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [
+            "gm-orb",
+            "gm-orb",
+            "gm-orb",
+            "gm-orb",
+            "gm-orb",
+            "gm-textsheen",
+            "gm-sheen"
+          ],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 20,
+          "countups": [],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#ap-builds",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple#ap-builds",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#ap-team",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple#ap-team",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/apple.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Think Different — Mohamed · God Mode Portfolio",
+          "lang": "en"
+        },
+        "desktop": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "visualWidth": 1440,
+            "visualHeight": 900
+          },
+          "explicitBlocks": 0,
+          "blockCount": 5,
+          "blockLabels": [
+            "ap-wordmark rv in",
+            "ap-head rv in",
+            "ap-sub rv in",
+            "ap-links rv in",
+            "ap-keynote rv in"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [
+            "gm-orb",
+            "gm-orb",
+            "gm-orb",
+            "gm-orb",
+            "gm-orb",
+            "gm-textsheen",
+            "gm-sheen"
+          ],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 20,
+          "countups": [],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#ap-builds",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple#ap-builds",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#ap-team",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple#ap-team",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/apple.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Think Different — Mohamed · God Mode Portfolio",
+          "lang": "en"
+        }
+      },
+      "reducedMotion": {
+        "url": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "visualWidth": 390,
+          "visualHeight": 844
+        },
+        "explicitBlocks": 0,
+        "blockCount": 6,
+        "blockLabels": [
+          "ap-wordmark rv in",
+          "ap-head rv in",
+          "ap-sub rv in",
+          "ap-links rv in",
+          "ap-keynote rv in",
+          "ap-team"
+        ],
+        "navCount": 8,
+        "navLabels": [
+          "◇ Hub",
+          "Razer",
+          "Disney+",
+          "Call of Duty",
+          "Netflix",
+          "Spotify",
+          "Apple",
+          "Samsung"
+        ],
+        "menuRouteCount": 0,
+        "strip": null,
+        "question": "",
+        "horizontalOverflow": 0,
+        "runningAnimations": [],
+        "reducedMotion": true,
+        "bootVisible": false,
+        "hiddenRevealCount": 0,
+        "countups": [],
+        "links": [
+          {
+            "raw": "/god-mode-portfolio/",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/razer",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/disney",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/cod",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/netflix",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/spotify",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/apple",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/samsung",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#ap-builds",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/apple#ap-builds",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#ap-team",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/apple#ap-team",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "mailto:medo433447@gmail.com",
+            "href": "mailto:medo433447@gmail.com",
+            "protocol": "mailto:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "tel:+96599338996",
+            "href": "tel:+96599338996",
+            "protocol": "tel:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "protocol": "https:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          }
+        ],
+        "canonical": "",
+        "ogUrl": "",
+        "ogImage": "/god-mode-portfolio/og/apple.svg",
+        "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+        "title": "Think Different — Mohamed · God Mode Portfolio",
+        "lang": "en"
+      }
+    },
+    {
+      "id": "samsung",
+      "url": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+      "viewports": {
+        "phone": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+          "viewport": {
+            "width": 390,
+            "height": 844,
+            "visualWidth": 390,
+            "visualHeight": 844
+          },
+          "explicitBlocks": 0,
+          "blockCount": 7,
+          "blockLabels": [
+            "sm-kicker rv in",
+            "sm-wordmark rv in",
+            "sm-head rv in",
+            "sm-sub rv in",
+            "sm-cta rv in",
+            "sm-strip rv in",
+            "sm-specs"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [
+            "gm-swirl",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-radar",
+            "gm-radar",
+            "gm-radar",
+            "gm-radar",
+            "gm-radar",
+            "gm-radar",
+            "gm-textsheen"
+          ],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 16,
+          "countups": [
+            {
+              "text": "1,000,000+",
+              "raw": "1000000",
+              "prefix": "",
+              "suffix": "+"
+            },
+            {
+              "text": "$0.84",
+              "raw": "0.84",
+              "prefix": "$",
+              "suffix": ""
+            },
+            {
+              "text": "1",
+              "raw": "1",
+              "prefix": "",
+              "suffix": ""
+            }
+          ],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sm-specs",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung#sm-specs",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sm-specs",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung#sm-specs",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/samsung.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Mohamed Ultra — Galaxy · God Mode Portfolio",
+          "lang": "en"
+        },
+        "desktop": {
+          "url": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "visualWidth": 1440,
+            "visualHeight": 900
+          },
+          "explicitBlocks": 0,
+          "blockCount": 7,
+          "blockLabels": [
+            "sm-kicker rv in",
+            "sm-wordmark rv in",
+            "sm-head rv in",
+            "sm-sub rv in",
+            "sm-cta rv in",
+            "sm-strip rv in",
+            "sm-specs"
+          ],
+          "navCount": 8,
+          "navLabels": [
+            "◇ Hub",
+            "Razer",
+            "Disney+",
+            "Call of Duty",
+            "Netflix",
+            "Spotify",
+            "Apple",
+            "Samsung"
+          ],
+          "menuRouteCount": 0,
+          "strip": null,
+          "question": "",
+          "horizontalOverflow": 0,
+          "runningAnimations": [
+            "gm-swirl",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-twinkle",
+            "gm-radar",
+            "gm-radar",
+            "gm-radar",
+            "gm-radar",
+            "gm-radar",
+            "gm-radar",
+            "gm-textsheen"
+          ],
+          "reducedMotion": false,
+          "bootVisible": false,
+          "hiddenRevealCount": 16,
+          "countups": [
+            {
+              "text": "1,000,000+",
+              "raw": "1000000",
+              "prefix": "",
+              "suffix": "+"
+            },
+            {
+              "text": "$0.84",
+              "raw": "0.84",
+              "prefix": "$",
+              "suffix": ""
+            },
+            {
+              "text": "1",
+              "raw": "1",
+              "prefix": "",
+              "suffix": ""
+            }
+          ],
+          "links": [
+            {
+              "raw": "/god-mode-portfolio/",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/razer",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/disney",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/cod",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/netflix",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/spotify",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/apple",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "/god-mode-portfolio/samsung",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sm-specs",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung#sm-specs",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "#sm-specs",
+              "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung#sm-specs",
+              "protocol": "http:",
+              "sameOrigin": true,
+              "fragmentOk": true
+            },
+            {
+              "raw": "mailto:medo433447@gmail.com",
+              "href": "mailto:medo433447@gmail.com",
+              "protocol": "mailto:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "tel:+96599338996",
+              "href": "tel:+96599338996",
+              "protocol": "tel:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            },
+            {
+              "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+              "protocol": "https:",
+              "sameOrigin": false,
+              "fragmentOk": true
+            }
+          ],
+          "canonical": "",
+          "ogUrl": "",
+          "ogImage": "/god-mode-portfolio/og/samsung.svg",
+          "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+          "title": "Mohamed Ultra — Galaxy · God Mode Portfolio",
+          "lang": "en"
+        }
+      },
+      "reducedMotion": {
+        "url": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "visualWidth": 390,
+          "visualHeight": 844
+        },
+        "explicitBlocks": 0,
+        "blockCount": 7,
+        "blockLabels": [
+          "sm-kicker rv in",
+          "sm-wordmark rv in",
+          "sm-head rv in",
+          "sm-sub rv in",
+          "sm-cta rv in",
+          "sm-strip rv in",
+          "sm-specs"
+        ],
+        "navCount": 8,
+        "navLabels": [
+          "◇ Hub",
+          "Razer",
+          "Disney+",
+          "Call of Duty",
+          "Netflix",
+          "Spotify",
+          "Apple",
+          "Samsung"
+        ],
+        "menuRouteCount": 0,
+        "strip": null,
+        "question": "",
+        "horizontalOverflow": 0,
+        "runningAnimations": [],
+        "reducedMotion": true,
+        "bootVisible": false,
+        "hiddenRevealCount": 0,
+        "countups": [
+          {
+            "text": "1000000",
+            "raw": "1000000",
+            "prefix": "",
+            "suffix": "+"
+          },
+          {
+            "text": "0.84",
+            "raw": "0.84",
+            "prefix": "$",
+            "suffix": ""
+          },
+          {
+            "text": "1",
+            "raw": "1",
+            "prefix": "",
+            "suffix": ""
+          }
+        ],
+        "links": [
+          {
+            "raw": "/god-mode-portfolio/",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/razer",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/razer",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/disney",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/disney",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/cod",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/cod",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/netflix",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/netflix",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/spotify",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/spotify",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/apple",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/apple",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "/god-mode-portfolio/samsung",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#sm-specs",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung#sm-specs",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "#sm-specs",
+            "href": "http://127.0.0.1:4321/god-mode-portfolio/samsung#sm-specs",
+            "protocol": "http:",
+            "sameOrigin": true,
+            "fragmentOk": true
+          },
+          {
+            "raw": "mailto:medo433447@gmail.com",
+            "href": "mailto:medo433447@gmail.com",
+            "protocol": "mailto:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "tel:+96599338996",
+            "href": "tel:+96599338996",
+            "protocol": "tel:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          },
+          {
+            "raw": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "href": "https://www.linkedin.com/in/mohamed-mahmoud-5a748b243",
+            "protocol": "https:",
+            "sameOrigin": false,
+            "fragmentOk": true
+          }
+        ],
+        "canonical": "",
+        "ogUrl": "",
+        "ogImage": "/god-mode-portfolio/og/samsung.svg",
+        "footerText": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands.",
+        "title": "Mohamed Ultra — Galaxy · God Mode Portfolio",
+        "lang": "en"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "hub/phone: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "gm-kicker rv in",
+        "gm-wordmark rv in",
+        "gm-banner rv in",
+        "gm-lede rv in",
+        "gm-lede rv in",
+        "gm-herostats",
+        "gm-cta rv in",
+        "identities"
+      ]
+    },
+    {
+      "name": "hub/phone: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "hub/phone: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "hub/phone: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "hub/phone: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "hub/phone: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "hub/phone: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "hub/phone: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "hub/phone: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "hub/phone: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/hub.svg"
+    },
+    {
+      "name": "hub/phone: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "hub/phone: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "hub/desktop: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "gm-kicker rv in",
+        "gm-wordmark rv in",
+        "gm-banner rv in",
+        "gm-lede rv in",
+        "gm-lede rv in",
+        "gm-herostats",
+        "gm-cta rv in",
+        "identities"
+      ]
+    },
+    {
+      "name": "hub/desktop: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "hub/desktop: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "hub/desktop: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "hub/desktop: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "hub/desktop: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "hub/desktop: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "hub/desktop: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "hub/desktop: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "hub/desktop: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/hub.svg"
+    },
+    {
+      "name": "hub/desktop: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "hub/desktop: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "hub/reduced: media query active",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "name": "hub/reduced: no boot gate",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "name": "hub/reduced: no hidden reveals",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "hub/reduced: no running long animations",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "razer/phone: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "rz-kicker rv in",
+        "rz-wordmark rv in",
+        "rz-banner rv in",
+        "rz-lede rv in",
+        "rz-hud rv in",
+        "rz-bench",
+        "rz-cta rv in"
+      ]
+    },
+    {
+      "name": "razer/phone: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "razer/phone: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "razer/phone: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "razer/phone: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "razer/phone: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "razer/phone: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "razer/phone: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "razer/phone: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "razer/phone: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/razer.svg"
+    },
+    {
+      "name": "razer/phone: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "razer/phone: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "razer/desktop: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "rz-kicker rv in",
+        "rz-wordmark rv in",
+        "rz-banner rv in",
+        "rz-lede rv in",
+        "rz-hud rv in",
+        "rz-bench",
+        "rz-cta rv in",
+        "rz-specs"
+      ]
+    },
+    {
+      "name": "razer/desktop: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "razer/desktop: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "razer/desktop: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "razer/desktop: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "razer/desktop: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "razer/desktop: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "razer/desktop: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "razer/desktop: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "razer/desktop: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/razer.svg"
+    },
+    {
+      "name": "razer/desktop: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "razer/desktop: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "razer/reduced: media query active",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "name": "razer/reduced: no boot gate",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "name": "razer/reduced: no hidden reveals",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "razer/reduced: no running long animations",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "disney/phone: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "dz-kicker rv in",
+        "dz-wordmark rv in",
+        "dz-banner rv in",
+        "dz-logline rv in",
+        "dz-rating rv in",
+        "dz-cta rv in"
+      ]
+    },
+    {
+      "name": "disney/phone: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "disney/phone: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "disney/phone: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "disney/phone: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "disney/phone: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "disney/phone: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "disney/phone: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "disney/phone: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "disney/phone: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/disney.svg"
+    },
+    {
+      "name": "disney/phone: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "disney/phone: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "disney/desktop: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "dz-kicker rv in",
+        "dz-wordmark rv in",
+        "dz-banner rv in",
+        "dz-logline rv in",
+        "dz-rating rv in",
+        "dz-cta rv in"
+      ]
+    },
+    {
+      "name": "disney/desktop: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "disney/desktop: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "disney/desktop: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "disney/desktop: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "disney/desktop: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "disney/desktop: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "disney/desktop: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "disney/desktop: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "disney/desktop: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/disney.svg"
+    },
+    {
+      "name": "disney/desktop: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "disney/desktop: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "disney/reduced: media query active",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "name": "disney/reduced: no boot gate",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "name": "disney/reduced: no hidden reveals",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "disney/reduced: no running long animations",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "cod/phone: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "cod-file-head",
+        "cod-radar",
+        "cod-kicker rv in",
+        "cod-wordmark rv in",
+        "cod-banner rv in",
+        "cod-lede rv in",
+        "cod-killstreak rv in",
+        "cod-stats",
+        "cod-cta rv in"
+      ]
+    },
+    {
+      "name": "cod/phone: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "cod/phone: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "cod/phone: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "cod/phone: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "cod/phone: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "cod/phone: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "cod/phone: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "cod/phone: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "cod/phone: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/cod.svg"
+    },
+    {
+      "name": "cod/phone: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "cod/phone: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "cod/desktop: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "cod-file-head",
+        "cod-radar",
+        "cod-kicker rv in",
+        "cod-wordmark rv in",
+        "cod-banner rv in",
+        "cod-lede rv in",
+        "cod-killstreak rv in",
+        "cod-stats",
+        "cod-cta rv in"
+      ]
+    },
+    {
+      "name": "cod/desktop: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "cod/desktop: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "cod/desktop: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "cod/desktop: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "cod/desktop: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "cod/desktop: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "cod/desktop: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "cod/desktop: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "cod/desktop: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/cod.svg"
+    },
+    {
+      "name": "cod/desktop: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "cod/desktop: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "cod/reduced: media query active",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "name": "cod/reduced: no boot gate",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "name": "cod/reduced: no hidden reveals",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "cod/reduced: no running long animations",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "netflix/phone: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "nf-ribbon",
+        "nf-kicker rv in",
+        "nf-wordmark rv in",
+        "nf-banner rv in",
+        "nf-logline rv in",
+        "nf-meta rv in",
+        "nf-cta rv in",
+        "nf-rows"
+      ]
+    },
+    {
+      "name": "netflix/phone: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "netflix/phone: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "netflix/phone: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "netflix/phone: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "netflix/phone: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "netflix/phone: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "netflix/phone: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "netflix/phone: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "netflix/phone: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/netflix.svg"
+    },
+    {
+      "name": "netflix/phone: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "netflix/phone: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "netflix/desktop: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "nf-ribbon",
+        "nf-kicker rv in",
+        "nf-wordmark rv in",
+        "nf-banner rv in",
+        "nf-logline rv in",
+        "nf-meta rv in",
+        "nf-cta rv in",
+        "nf-rows"
+      ]
+    },
+    {
+      "name": "netflix/desktop: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "netflix/desktop: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "netflix/desktop: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "netflix/desktop: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "netflix/desktop: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "netflix/desktop: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "netflix/desktop: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "netflix/desktop: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "netflix/desktop: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/netflix.svg"
+    },
+    {
+      "name": "netflix/desktop: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "netflix/desktop: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "netflix/reduced: media query active",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "name": "netflix/reduced: no boot gate",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "name": "netflix/reduced: no hidden reveals",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "netflix/reduced: no running long animations",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "spotify/phone: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "sp-avatar",
+        "sp-verified rv in",
+        "sp-title rv in",
+        "sp-listeners rv in",
+        "sp-tagline rv in",
+        "sp-controls rv in",
+        "sp-tracks"
+      ]
+    },
+    {
+      "name": "spotify/phone: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "spotify/phone: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "spotify/phone: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "spotify/phone: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "spotify/phone: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "spotify/phone: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "spotify/phone: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "spotify/phone: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "spotify/phone: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/spotify.svg"
+    },
+    {
+      "name": "spotify/phone: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "spotify/phone: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "spotify/desktop: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "sp-sidebar",
+        "sp-avatar",
+        "sp-verified rv in",
+        "sp-title rv in",
+        "sp-listeners rv in",
+        "sp-tagline rv in",
+        "sp-controls rv in",
+        "sp-tracks"
+      ]
+    },
+    {
+      "name": "spotify/desktop: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "spotify/desktop: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "spotify/desktop: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "spotify/desktop: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "spotify/desktop: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "spotify/desktop: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "spotify/desktop: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "spotify/desktop: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "spotify/desktop: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/spotify.svg"
+    },
+    {
+      "name": "spotify/desktop: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "spotify/desktop: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "spotify/reduced: media query active",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "name": "spotify/reduced: no boot gate",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "name": "spotify/reduced: no hidden reveals",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "spotify/reduced: no running long animations",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "apple/phone: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "ap-wordmark rv in",
+        "ap-head rv in",
+        "ap-sub rv in",
+        "ap-links rv in",
+        "ap-keynote rv in",
+        "ap-team"
+      ]
+    },
+    {
+      "name": "apple/phone: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "apple/phone: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "apple/phone: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "apple/phone: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "apple/phone: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "apple/phone: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "apple/phone: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "apple/phone: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "apple/phone: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/apple.svg"
+    },
+    {
+      "name": "apple/phone: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "apple/phone: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "apple/desktop: no more than five primary blocks",
+      "pass": true,
+      "evidence": [
+        "ap-wordmark rv in",
+        "ap-head rv in",
+        "ap-sub rv in",
+        "ap-links rv in",
+        "ap-keynote rv in"
+      ]
+    },
+    {
+      "name": "apple/desktop: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "apple/desktop: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "apple/desktop: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "apple/desktop: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "apple/desktop: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "apple/desktop: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "apple/desktop: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "apple/desktop: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "apple/desktop: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/apple.svg"
+    },
+    {
+      "name": "apple/desktop: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "apple/desktop: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "apple/reduced: media query active",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "name": "apple/reduced: no boot gate",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "name": "apple/reduced: no hidden reveals",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "apple/reduced: no running long animations",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "samsung/phone: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "sm-kicker rv in",
+        "sm-wordmark rv in",
+        "sm-head rv in",
+        "sm-sub rv in",
+        "sm-cta rv in",
+        "sm-strip rv in",
+        "sm-specs"
+      ]
+    },
+    {
+      "name": "samsung/phone: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "samsung/phone: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "samsung/phone: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "samsung/phone: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "samsung/phone: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "samsung/phone: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "samsung/phone: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "samsung/phone: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "samsung/phone: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/samsung.svg"
+    },
+    {
+      "name": "samsung/phone: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "samsung/phone: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "samsung/desktop: no more than five primary blocks",
+      "pass": false,
+      "evidence": [
+        "sm-kicker rv in",
+        "sm-wordmark rv in",
+        "sm-head rv in",
+        "sm-sub rv in",
+        "sm-cta rv in",
+        "sm-strip rv in",
+        "sm-specs"
+      ]
+    },
+    {
+      "name": "samsung/desktop: explicit calm block instrumentation",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "samsung/desktop: no more than five nav items",
+      "pass": false,
+      "evidence": [
+        "◇ Hub",
+        "Razer",
+        "Disney+",
+        "Call of Duty",
+        "Netflix",
+        "Spotify",
+        "Apple",
+        "Samsung"
+      ]
+    },
+    {
+      "name": "samsung/desktop: no horizontal overflow",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "samsung/desktop: calm strip present and <= 40px",
+      "pass": false,
+      "evidence": null
+    },
+    {
+      "name": "samsung/desktop: page question present",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "samsung/desktop: all eight routes in world menu",
+      "pass": false,
+      "evidence": 0
+    },
+    {
+      "name": "samsung/desktop: canonical host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "samsung/desktop: Open Graph URL host",
+      "pass": false,
+      "evidence": ""
+    },
+    {
+      "name": "samsung/desktop: absolute Open Graph image host",
+      "pass": false,
+      "evidence": "/god-mode-portfolio/og/samsung.svg"
+    },
+    {
+      "name": "samsung/desktop: visible v2.0.0 footer",
+      "pass": false,
+      "evidence": "Mohamed Mahmoud · Digital Marketing Specialist · Kuwait A design tribute / style study — not affiliated with these brands."
+    },
+    {
+      "name": "samsung/desktop: in-page fragments resolve",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "samsung/reduced: media query active",
+      "pass": true,
+      "evidence": true
+    },
+    {
+      "name": "samsung/reduced: no boot gate",
+      "pass": true,
+      "evidence": false
+    },
+    {
+      "name": "samsung/reduced: no hidden reveals",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "samsung/reduced: no running long animations",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "hub: HTTP 200",
+      "pass": true,
+      "evidence": 200
+    },
+    {
+      "name": "razer: HTTP 200",
+      "pass": true,
+      "evidence": 200
+    },
+    {
+      "name": "disney: HTTP 200",
+      "pass": true,
+      "evidence": 200
+    },
+    {
+      "name": "cod: HTTP 200",
+      "pass": true,
+      "evidence": 200
+    },
+    {
+      "name": "netflix: HTTP 200",
+      "pass": true,
+      "evidence": 200
+    },
+    {
+      "name": "spotify: HTTP 200",
+      "pass": true,
+      "evidence": 200
+    },
+    {
+      "name": "apple: HTTP 200",
+      "pass": true,
+      "evidence": 200
+    },
+    {
+      "name": "samsung: HTTP 200",
+      "pass": true,
+      "evidence": 200
+    },
+    {
+      "name": "sitemap: HTTP 200",
+      "pass": true,
+      "evidence": 200
+    },
+    {
+      "name": "sitemap: canonical host",
+      "pass": false,
+      "evidence": [
+        "http://www.sitemaps.org/schemas/sitemap/0.9\">\n  ",
+        "https://engineeringprojectswork-droid.github.io/god-mode-portfolio/",
+        "https://engineeringprojectswork-droid.github.io/god-mode-portfolio/razer",
+        "https://engineeringprojectswork-droid.github.io/god-mode-portfolio/disney",
+        "https://engineeringprojectswork-droid.github.io/god-mode-portfolio/cod",
+        "https://engineeringprojectswork-droid.github.io/god-mode-portfolio/netflix",
+        "https://engineeringprojectswork-droid.github.io/god-mode-portfolio/spotify",
+        "https://engineeringprojectswork-droid.github.io/god-mode-portfolio/apple",
+        "https://engineeringprojectswork-droid.github.io/god-mode-portfolio/samsung"
+      ]
+    },
+    {
+      "name": "robots: HTTP 200",
+      "pass": true,
+      "evidence": 200
+    },
+    {
+      "name": "robots: sitemap host",
+      "pass": false,
+      "evidence": "User-agent: *\nAllow: /\n\nSitemap: https://engineeringprojectswork-droid.github.io/god-mode-portfolio/sitemap.xml"
+    }
+  ],
+  "summary": {
+    "passed": 91,
+    "failed": 145,
+    "total": 236
+  }
+}
