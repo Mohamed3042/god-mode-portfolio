@@ -14,28 +14,23 @@ const cu = (v: string) => {
   return { n, prefix: v.trim().startsWith('$') ? '$' : '', suffix: /\+$/.test(v.trim()) ? '+' : '' };
 };
 ---
-<div id="gm-boot" data-theme="razer" data-dur="1500" style="background:#040404">
-  <div class="rz-boot">
-    <div class="rz-boot-scan" aria-hidden="true"></div>
-    <div class="rz-boot-txt">CHROMA ENABLED</div>
-  </div>
-</div>
-
 <div id="razerSweep" aria-hidden="true"></div>
 <div class="fx rz-grid" id="razerGrid" aria-hidden="true"></div>
 
 <main class="rz-wrap">
   <section class="rz-hero">
-    <p class="rz-kicker rv">{t.copy.kicker}</p>
-    <div class="rz-wordmark rv" data-glitch set:html={WORDMARKS.razer}></div>
-    <p class="rz-banner rv">{t.copy.banner}</p>
-    <p class="rz-lede rv">{t.copy.lede}</p>
+    <div class="rz-intro" data-calm-block="identity">
+      <p class="rz-kicker rv">{t.copy.kicker}</p>
+      <div class="rz-wordmark rv" data-glitch set:html={WORDMARKS.razer}></div>
+      <h1 class="rz-banner rv">{t.copy.banner}</h1>
+      <p class="rz-lede rv">{t.copy.lede}</p>
+    </div>
 
-    <div class="rz-hud rv" aria-hidden="true">
+    <div class="rz-hud rv" data-calm-block="status" aria-label="System status">
       <span>SYSTEM: <b>ONLINE</b></span><span>CHROMA: <b>ON</b></span><span>PING: <b>12ms</b></span><span>OPERATOR: <b>1</b></span>
     </div>
 
-    <div class="rz-bench">
+    <div class="rz-bench" data-calm-block="proof">
       {profile.heroStats.map((s) => {
         const c = cu(s.value);
         return (
@@ -47,7 +42,7 @@ const cu = (v: string) => {
         );
       })}
     </div>
-    <div class="rz-cta rv">
+    <div class="rz-cta rv" data-calm-block="actions">
       <a class="rz-btn" href="#rz-specs">{t.copy.cta1}</a>
       <a class="rz-btn ghost" href={`mailto:${profile.identity.contact.email}`}>{t.copy.cta2}</a>
     </div>
@@ -75,7 +70,7 @@ const cu = (v: string) => {
     {profile.flagships.map((f) => (
       <article class="rz-module rv">
         <div class="rz-mod-head"><span class="rz-led"></span><span class="rz-status">INSTALLED</span><span class="rz-mod-tag">{f.tag}</span></div>
-        <h4>{f.name}</h4>
+        <h3>{f.name}</h3>
         <div class="rz-stack">{f.stack}</div>
         <p>{f.detail}</p>
         <ul>{f.metrics.map((x) => <li>{x}</li>)}</ul>
@@ -152,8 +147,7 @@ const cu = (v: string) => {
   .rz-val b { font-family: 'Chakra Petch'; font-weight: 700; font-size: 24px; color: #44D62C; text-shadow: 0 0 16px rgba(68,214,44,.5); }
   .rz-val span { font-family: 'Share Tech Mono', monospace; font-size: 11px; color: #7d7d7d; text-transform: uppercase; }
   .rz-bar { height: 6px; background: #1a1a1a; border-radius: 2px; margin-top: 12px; overflow: hidden; }
-  .rz-bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #44D62C, #00E0FF); box-shadow: 0 0 12px rgba(68,214,44,.6); transition: width 1.2s var(--ease); }
-  .rz-spec.in .rz-bar i { width: var(--w); }
+  .rz-bar i { display: block; height: 100%; width: var(--w); background: linear-gradient(90deg, #44D62C, #00E0FF); box-shadow: 0 0 12px rgba(68,214,44,.6); }
 
   .rz-modules { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
   .rz-module { background: #0e0e0e; border: 1px solid #1a1a1a; border-left: 2px solid #44D62C; padding: 18px; transition: transform .25s, box-shadow .25s; }
@@ -161,7 +155,7 @@ const cu = (v: string) => {
   .rz-mod-head { display: flex; align-items: center; gap: 10px; }
   .rz-status { font-family: 'Share Tech Mono', monospace; font-size: 10px; letter-spacing: .18em; color: #44D62C; }
   .rz-mod-tag { margin-left: auto; font-family: 'Share Tech Mono', monospace; font-size: 10px; color: #7d7d7d; border: 1px solid #222; padding: 1px 7px; }
-  .rz-module h4 { font-family: 'Chakra Petch'; font-weight: 700; text-transform: uppercase; color: #ededed; font-size: 17px; margin: 12px 0 4px; }
+  .rz-module h3 { font-family: 'Chakra Petch'; font-weight: 700; text-transform: uppercase; color: #ededed; font-size: 17px; margin: 12px 0 4px; }
   .rz-stack { font-family: 'Share Tech Mono', monospace; font-size: 11px; color: #00E0FF; margin-bottom: 8px; }
   .rz-module p { color: #8f8f8f; font-size: 13px; line-height: 1.5; }
   .rz-module ul { list-style: none; margin-top: 10px; display: flex; flex-direction: column; gap: 5px; }

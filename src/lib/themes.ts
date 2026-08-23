@@ -55,7 +55,7 @@ export const THEMES: Record<ThemeId, ThemeMeta> = {
       kicker: 'GOD MODE · CHOOSE AN IDENTITY',
       banner: 'MOHAMED',
       lede:
-        'One portfolio. Five completely different worlds — each with its own colors, type, motion and transitions. Same real story. Pick an identity.',
+        'One portfolio. Seven distinct voices — each with its own color, type and point of view. Same verified story. Pick a world.',
       teamTitle: 'The team you replace',
       flagTitle: 'Shipped systems',
       cardLabel: 'ROLE',

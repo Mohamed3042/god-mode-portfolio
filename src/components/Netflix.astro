@@ -7,44 +7,25 @@ import ContactBlock from './ContactBlock.astro';
 import FooterBlock from './FooterBlock.astro';
 
 const t = THEMES.netflix;
-const personas = [
-  { name: 'The Media Buyer', glyph: '🎯', c: '#E50914' },
-  { name: 'The Creator', glyph: '🎬', c: '#f5b50a' },
-  { name: 'The Ops Builder', glyph: '📊', c: '#1a7fd6' },
-  { name: 'The Automator', glyph: '⚙️', c: '#2ec27e' },
-];
 ---
-<!-- "Who's watching?" profile gate (first-visit intro + switch-in transition) -->
-<div id="nf-gate" style="background:#141414">
-  <p class="nf-gate-title">Who's watching?</p>
-  <div class="nf-profiles">
-    {personas.map((p, i) => (
-      <button class="nf-profile" data-i={i} style={`--pc:${p.c}`}>
-        <span class="nf-avatar">{p.glyph}</span>
-        <span class="nf-pname">{p.name}</span>
-      </button>
-    ))}
-  </div>
-  <p class="nf-gate-hint">Pick a profile — or just watch</p>
-</div>
-<noscript><style>#nf-gate{display:none!important}</style></noscript>
-
 <!-- Billboard hero -->
 <header class="nf-billboard">
   <div class="nf-poster" aria-hidden="true"></div>
   <div class="nf-spotlight" aria-hidden="true"></div>
   <div class="nf-fade" aria-hidden="true"></div>
   <div class="nf-billboard-inner">
-    <span class="nf-ribbon">NEW</span>
-    <p class="nf-kicker rv">{t.copy.kicker}</p>
-    <div class="nf-wordmark rv" set:html={WORDMARKS.netflix}></div>
-    <p class="nf-banner rv">{t.copy.banner}</p>
-    <p class="nf-logline rv">{profile.identity.tagline} {profile.heroLine.replace(/·/g, '•')}</p>
-    <div class="nf-meta rv">
+    <div class="nf-intro" data-calm-block="identity">
+      <span class="nf-ribbon">NEW</span>
+      <p class="nf-kicker rv">{t.copy.kicker}</p>
+      <div class="nf-wordmark rv" set:html={WORDMARKS.netflix}></div>
+      <h1 class="nf-banner rv">{t.copy.banner}</h1>
+      <p class="nf-logline rv">{profile.identity.tagline} {profile.heroLine.replace(/·/g, '•')}</p>
+    </div>
+    <div class="nf-meta rv" data-calm-block="proof">
       <span class="nf-match">98% Match</span>
       <span>2026</span><span class="nf-badge">TEAM-OF-1</span><span>Marketing</span><span>Bilingual AR/EN</span><span>{profile.identity.location}</span>
     </div>
-    <div class="nf-cta rv">
+    <div class="nf-cta rv" data-calm-block="actions">
       <a class="nf-btn play" href="#nf-rows">▶ Play Work</a>
       <a class="nf-btn list" href={`mailto:${profile.identity.contact.email}`}>+ My List</a>
     </div>
@@ -209,30 +190,3 @@ const personas = [
     .nf-billboard { min-height: 76vh; }
   }
 </style>
-
-<script>
-  (function nfGate() {
-    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const gate = document.getElementById('nf-gate');
-    if (!gate) return;
-    if (reduce) { gate.remove(); return; }
-    const seen = sessionStorage.getItem('gm-nf-seen');
-    try { sessionStorage.setItem('gm-nf-seen', '1'); } catch {}
-
-    function dismiss(zoom: boolean) {
-      gate.classList.add(zoom ? 'zoom' : 'hide');
-      setTimeout(() => gate.remove(), 750);
-    }
-    if (seen) {
-      // repeat visit within session → quick zoom-through
-      requestAnimationFrame(() => setTimeout(() => dismiss(true), 260));
-      return;
-    }
-    gate.querySelectorAll<HTMLButtonElement>('.nf-profile').forEach((b) => {
-      b.addEventListener('click', () => dismiss(true));
-    });
-    // never a dead-end: auto-proceed if no pick
-    const auto = setTimeout(() => dismiss(true), 4200);
-    gate.addEventListener('click', () => clearTimeout(auto));
-  })();
-</script>

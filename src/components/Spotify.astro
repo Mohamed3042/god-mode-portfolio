@@ -14,11 +14,6 @@ const albums = [
   { name: 'AI Automations', meta: 'Ongoing · Systems', c: '#c4472e' },
 ];
 ---
-<!-- color-bleed switch-in -->
-<div id="gm-boot" data-theme="spotify" data-dur="1000" style="background:linear-gradient(180deg,#1DB954,#0c0c0c 78%)">
-  <div class="sp-boot">▶ This Is Mohamed</div>
-</div>
-
 <div class="sp-app">
   <!-- sidebar -->
   <aside class="sp-sidebar">
@@ -36,7 +31,7 @@ const albums = [
     <!-- artist header -->
     <header class="sp-header">
       <div class="sp-blob" aria-hidden="true"></div>
-      <div class="sp-header-inner">
+      <div class="sp-header-inner" data-calm-block="identity">
         <div class="sp-avatar" aria-hidden="true"><span>M</span></div>
         <div class="sp-header-txt">
           <div class="sp-verified rv">✓ Verified Artist</div>
@@ -45,7 +40,7 @@ const albums = [
           <p class="sp-tagline rv">{profile.identity.roleShort} · {profile.identity.location} · {profile.identity.tagline}</p>
         </div>
       </div>
-      <div class="sp-controls rv">
+      <div class="sp-controls rv" data-calm-block="actions">
         <a class="sp-play" href="#sp-tracks">▶</a>
         <a class="sp-follow" href={profile.identity.contact.linkedinUrl} target="_blank" rel="noopener">Follow</a>
         <span class="sp-dots">•••</span>

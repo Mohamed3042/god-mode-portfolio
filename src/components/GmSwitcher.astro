@@ -4,19 +4,67 @@ import { withBase } from '../lib/base';
 
 interface Props { active: ThemeId; }
 const { active } = Astro.props;
+const currentIndex = THEME_ORDER.indexOf(active);
+const previous = THEME_ORDER[(currentIndex - 1 + THEME_ORDER.length) % THEME_ORDER.length];
+const next = THEME_ORDER[(currentIndex + 1) % THEME_ORDER.length];
+const question = active === 'hub' ? 'Which world?' : 'Who is he, in this voice?';
+const nextTarget: Record<ThemeId, { href: string; label: string }> = {
+  hub: { href: '#identities', label: 'Choose a world' },
+  razer: { href: '#rz-specs', label: 'See the loadout' },
+  disney: { href: '#dz-originals', label: 'See the Originals' },
+  cod: { href: '#cod-missions', label: 'Open the mission file' },
+  netflix: { href: '#nf-rows', label: 'Browse the work' },
+  spotify: { href: '#sp-tracks', label: 'Play the proof' },
+  apple: { href: '#ap-team', label: 'Meet the operator' },
+  samsung: { href: '#sm-specs', label: 'Read the specs' },
+};
 ---
-<nav class="gm-switcher" aria-label="God Mode theme switcher">
-  <span class="brand">God&nbsp;Mode</span>
-  {THEME_ORDER.map((id) => {
-    const t = THEMES[id];
-    const isActive = id === active;
-    return (
-      <a
-        class="gm-sw"
-        href={withBase(t.route)}
-        data-theme-target={id}
-        aria-current={isActive ? 'page' : undefined}
-      >{t.label}</a>
-    );
-  })}
+<nav class="gm-switcher" aria-label="God Mode worlds">
+  <a class="gm-brand" href={withBase('/')} title="God Mode portfolio hub">
+    <span class="gm-brand-mark" aria-hidden="true">◇</span>
+    <span class="gm-brand-name">God Mode</span>
+    <span class="gm-version-chip">2.0</span>
+  </a>
+
+  <a class="gm-sw gm-neighbour" href={withBase(THEMES[previous].route)} title={`Previous world: ${THEMES[previous].label}`}>
+    <span aria-hidden="true">←</span><span>{THEMES[previous].label}</span>
+  </a>
+  <a class="gm-sw gm-current" href={withBase(THEMES[active].route)} aria-current="page">{THEMES[active].label}</a>
+  <a class="gm-sw gm-neighbour" href={withBase(THEMES[next].route)} title={`Next world: ${THEMES[next].label}`}>
+    <span>{THEMES[next].label}</span><span aria-hidden="true">→</span>
+  </a>
+
+  <details class="gm-world-menu">
+    <summary>Worlds <span aria-hidden="true">▾</span></summary>
+    <div class="gm-world-panel">
+      <p>Choose a world</p>
+      <div role="list">
+        {THEME_ORDER.map((id, index) => (
+          <a href={withBase(THEMES[id].route)} aria-current={id === active ? 'page' : undefined}>
+            <span>{String(index + 1).padStart(2, '0')}</span>
+            <b>{THEMES[id].label}</b>
+          </a>
+        ))}
+      </div>
+    </div>
+  </details>
 </nav>
+
+<div class="gm-strip" role="status" aria-label="Page orientation">
+  <span class="gm-strip-where">{String(currentIndex + 1).padStart(2, '0')} / {String(THEME_ORDER.length).padStart(2, '0')} · {THEMES[active].label}</span>
+  <span class="gm-strip-question" data-calm-question>{question}</span>
+  <a href={nextTarget[active].href}>{nextTarget[active].label} ↓</a>
+</div>
+
+<script>
+  const worldMenu = document.querySelector<HTMLDetailsElement>('.gm-world-menu');
+  addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && worldMenu?.open) {
+      worldMenu.open = false;
+      worldMenu.querySelector('summary')?.focus();
+    }
+  });
+  addEventListener('pointerdown', (event) => {
+    if (worldMenu?.open && !worldMenu.contains(event.target as Node)) worldMenu.open = false;
+  });
+</script>

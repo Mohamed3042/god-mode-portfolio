@@ -25,16 +25,6 @@ const heroStrip = [
   { value: '1', num: '1', prefix: '', suffix: '', label: 'person, all roles', star: false },
 ];
 ---
-<div id="gm-boot" data-theme="samsung" data-dur="2100" style="background:#000006">
-  <div class="sm-boot-ring" aria-hidden="true"></div>
-  <div class="sm-boot-in">
-    <div class="sm-boot-mark" set:html={WORDMARKS.samsung}></div>
-    <div class="sm-boot-ultra">Mohamed Ultra</div>
-    <div class="sm-boot-bar"><i></i></div>
-    <div class="sm-boot-tag">Do the extraordinary</div>
-  </div>
-</div>
-
 <!-- galaxy background FX -->
 <div class="fx sm-glow" aria-hidden="true"></div>
 <div class="fx sm-swirl" aria-hidden="true"></div>
@@ -53,15 +43,17 @@ const heroStrip = [
 
 <main class="sm-wrap">
   <section class="sm-hero">
-    <div class="sm-kicker rv">Galaxy · Mohamed Ultra</div>
-    <div class="sm-wordmark rv" set:html={WORDMARKS.samsung}></div>
-    <h1 class="sm-head rv">Do the<br><span class="sm-grad">extraordinary.</span></h1>
-    <p class="sm-sub rv">{t.copy.lede}</p>
-    <div class="sm-cta rv">
+    <div class="sm-intro" data-calm-block="identity">
+      <div class="sm-kicker rv">Galaxy · Mohamed Ultra</div>
+      <div class="sm-wordmark rv" set:html={WORDMARKS.samsung}></div>
+      <h1 class="sm-head rv">Do the<br><span class="sm-grad">extraordinary.</span></h1>
+      <p class="sm-sub rv">{t.copy.lede}</p>
+    </div>
+    <div class="sm-cta rv" data-calm-block="actions">
       <a class="sm-btn primary" href="#sm-specs">{t.copy.cta1}</a>
       <a class="sm-btn ghost" href="#sm-specs">{t.copy.cta2}</a>
     </div>
-    <div class="sm-strip rv">
+    <div class="sm-strip rv" data-calm-block="proof">
       {heroStrip.map((s) => (
         <div class="sm-strip-cell">
           <div class="sm-strip-v"><span data-countup={s.num} data-prefix={s.prefix} data-suffix={s.suffix}>{s.value}</span>{s.star && <sup>*</sup>}</div>
@@ -155,9 +147,9 @@ const heroStrip = [
   .sm-btn.primary:hover { transform: translateY(-2px); box-shadow: 0 16px 44px rgba(53,98,255,.6); }
   .sm-btn.ghost { border: 1px solid rgba(255,255,255,.28); color: #f4f6ff; }
   .sm-btn.ghost:hover { background: rgba(255,255,255,.08); }
-  .sm-strip { display: flex; justify-content: center; flex-wrap: wrap; gap: 1px; margin: 44px auto 0; max-width: 620px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(53,98,255,.25); background: rgba(53,98,255,.16); }
-  .sm-strip-cell { background: #04050e; padding: 20px 30px; text-align: center; flex: 1; min-width: 150px; }
-  .sm-strip-v { font-family: 'Sora'; font-weight: 800; font-size: clamp(26px,3.4vw,42px); color: #f4f6ff; line-height: 1; } .sm-strip-v sup { font-size: .4em; color: #12b6ff; top: -1.1em; }
+  .sm-strip { display: grid; grid-template-columns: minmax(260px,1.5fr) repeat(2,minmax(150px,1fr)); gap: 1px; margin: 44px auto 0; max-width: 620px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(53,98,255,.25); background: rgba(53,98,255,.16); }
+  .sm-strip-cell { background: #04050e; padding: 20px 18px; text-align: center; min-width: 0; }
+  .sm-strip-v { font-family: 'Sora'; font-weight: 800; font-size: clamp(26px,2.5vw,36px); color: #f4f6ff; line-height: 1; white-space: nowrap; } .sm-strip-v sup { font-size: .4em; color: #12b6ff; top: -1.1em; }
   .sm-strip-l { font-family: 'Sora'; font-weight: 500; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #9aa0b5; margin-top: 8px; }
 
   .sm-section { max-width: 1040px; margin: 0 auto; padding: clamp(30px,6vh,56px) 22px; }
@@ -182,6 +174,12 @@ const heroStrip = [
   .sm-model-sub { position: relative; font-family: 'Sora'; font-size: 13px; line-height: 1.5; color: #9aa0b5; margin-top: 8px; }
   .sm-foot-note { font-family: 'Sora'; font-size: 12px; line-height: 1.7; color: #5f6478; margin-top: 30px; }
   .sm-extra { max-width: 1040px; margin: 0 auto; padding: 0 22px 120px; }
+
+  @media (max-width: 560px) {
+    .sm-strip { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .sm-strip-cell:first-child { grid-column: 1 / -1; }
+    .sm-strip-v { font-size: 28px; }
+  }
 
   @media (prefers-reduced-motion: reduce) {
     .sm-swirl, .sm-stars, .sm-orbits, .sm-grad, .sm-boot-ring { animation: none !important; }

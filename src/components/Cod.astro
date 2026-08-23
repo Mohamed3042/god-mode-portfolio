@@ -8,14 +8,6 @@ import FooterBlock from './FooterBlock.astro';
 
 const t = THEMES.cod;
 ---
-<div id="gm-boot" data-theme="cod" data-dur="2000" style="background:#0b0c0e">
-  <div class="cod-boot">
-    <div class="cod-boot-txt">DEPLOYING<span class="cod-dots">…</span></div>
-    <div class="cod-depbar"><i></i></div>
-    <div class="cod-coords" id="codCoords"></div>
-  </div>
-</div>
-
 <div class="fx cod-grid" id="codGrid" aria-hidden="true"></div>
 <div class="fx cod-scan" aria-hidden="true"></div>
 <div class="fx cod-grain" aria-hidden="true"></div>
@@ -24,25 +16,27 @@ const t = THEMES.cod;
 
 <main class="cod-wrap">
   <section class="cod-file">
-    <div class="cod-file-head">
-      <span class="cod-redact">■■■■■■</span>
-      <span class="cod-classified">OPERATOR FILE · CLASSIFIED</span>
-      <span class="cod-redact">■■■</span>
+    <div class="cod-intro" data-calm-block="identity">
+      <div class="cod-file-head">
+        <span class="cod-redact">■■■■■■</span>
+        <span class="cod-classified">OPERATOR FILE · CLASSIFIED</span>
+        <span class="cod-redact">■■■</span>
+      </div>
+
+      <div class="cod-radar" aria-hidden="true">
+        <div class="cod-radar-sweep"></div>
+        <span class="cod-blip b1"></span><span class="cod-blip b2"></span><span class="cod-blip b3"></span>
+        <div class="cod-radar-ring"></div>
+      </div>
+
+      <p class="cod-kicker rv">CALLSIGN</p>
+      <div class="cod-wordmark rv" set:html={WORDMARKS.cod}></div>
+      <h1 class="cod-banner rv">{t.copy.banner} · CLASS: FULL-STACK MARKETER</h1>
+      <p class="cod-lede rv">{t.copy.lede}</p>
     </div>
 
-    <div class="cod-radar" aria-hidden="true">
-      <div class="cod-radar-sweep"></div>
-      <span class="cod-blip b1"></span><span class="cod-blip b2"></span><span class="cod-blip b3"></span>
-      <div class="cod-radar-ring"></div>
-    </div>
-
-    <p class="cod-kicker rv">CALLSIGN</p>
-    <div class="cod-wordmark rv" set:html={WORDMARKS.cod}></div>
-    <p class="cod-banner rv">{t.copy.banner} · CLASS: FULL-STACK MARKETER</p>
-    <p class="cod-lede rv">{t.copy.lede}</p>
-
-    <div class="cod-killstreak rv">KILLSTREAK ⚡ TEAM-OF-ONE</div>
-    <div class="cod-stats">
+    <div class="cod-killstreak rv" data-calm-block="status">KILLSTREAK ⚡ TEAM-OF-ONE</div>
+    <div class="cod-stats" data-calm-block="proof">
       {profile.heroStats.map((s) => (
         <div class="cod-stat rv">
           <div class="v">{s.value}{s.selfReported && <span class="cod-star">*</span>}</div>
@@ -50,7 +44,7 @@ const t = THEMES.cod;
         </div>
       ))}
     </div>
-    <div class="cod-cta rv">
+    <div class="cod-cta rv" data-calm-block="actions">
       <button class="cod-btn" id="codDeploy" type="button">{t.copy.cta1}</button>
       <a class="cod-btn ghost" href={`mailto:${profile.identity.contact.email}`}>{t.copy.cta2}</a>
     </div>
@@ -76,7 +70,7 @@ const t = THEMES.cod;
       <article class="cod-op rv" data-hot>
         <span class="cod-br tl"></span><span class="cod-br tr"></span><span class="cod-br bl"></span><span class="cod-br br"></span>
         <div class="cod-op-head"><span class="cod-op-check">OP ✓</span><span class="cod-op-score">SCORE +{(i + 1) * 250}</span></div>
-        <h4>{f.name}</h4>
+        <h3>{f.name}</h3>
         <div class="cod-stack">{f.stack}</div>
         <p>{f.detail}</p>
         <ul>{f.metrics.map((x) => <li>{x}</li>)}</ul>
@@ -159,11 +153,10 @@ const t = THEMES.cod;
   .cod-complete, .cod-op-check { color: #8FA31E; font-size: 11px; letter-spacing: .1em; }
   .cod-callsign, .cod-op-score { color: #FF7A00; font-size: 11px; }
   .cod-role { font-family: 'Share Tech Mono', monospace; color: #8b8d80; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; margin-top: 10px; }
-  .cod-tag h3, .cod-op h4 { font-family: 'Oswald'; font-weight: 600; text-transform: uppercase; color: #eae7dd; font-size: 18px; margin: 4px 0 6px; letter-spacing: .02em; }
+  .cod-tag h3, .cod-op h3 { font-family: 'Oswald'; font-weight: 600; text-transform: uppercase; color: #eae7dd; font-size: 18px; margin: 4px 0 6px; letter-spacing: .02em; }
   .cod-tag p, .cod-op p { color: #9a9c8d; font-size: 13px; line-height: 1.5; }
   .cod-xp { margin-top: 12px; } .cod-xp-l { display: flex; justify-content: space-between; font-family: 'Share Tech Mono', monospace; font-size: 11px; color: #b7b9a6; margin-bottom: 5px; } .cod-xp-l span { color: #8FA31E; }
-  .cod-xp-bar { height: 7px; background: #101210; border: 1px solid #2a2d24; overflow: hidden; } .cod-xp-bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #8FA31E, #FF7A00); transition: width 1.2s var(--ease); }
-  .cod-tag.in .cod-xp-bar i { width: var(--w); }
+  .cod-xp-bar { height: 7px; background: #101210; border: 1px solid #2a2d24; overflow: hidden; } .cod-xp-bar i { display: block; height: 100%; width: var(--w); background: linear-gradient(90deg, #8FA31E, #FF7A00); }
   .cod-stack { font-family: 'Share Tech Mono', monospace; font-size: 11px; color: #8FA31E; margin-bottom: 8px; }
   .cod-ops { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
   .cod-op ul { list-style: none; margin-top: 10px; display: flex; flex-direction: column; gap: 5px; } .cod-op li { color: #cfccc2; font-size: 12.5px; } .cod-op li::before { content: "▪ "; color: #FF7A00; }

@@ -9,29 +9,18 @@ import FooterBlock from './FooterBlock.astro';
 const t = THEMES.disney;
 const covers = ['#1a3a8a', '#7a3f9e', '#c78a2a', '#2a7a8a', '#8a2a5a', '#3a5aaa'];
 ---
-<div id="gm-boot" data-theme="disney" data-dur="2400" style="background:radial-gradient(circle at 50% 74%, #17225f, #060a22 72%)">
-  <canvas id="disneyFw" class="dz-fw" aria-hidden="true"></canvas>
-  <div class="dz-boot">
-    <svg class="dz-arc" viewBox="0 0 600 240" aria-hidden="true">
-      <path class="dz-arc-path" d="M40,210 Q300,20 560,210" fill="none" stroke="#E8C87A" stroke-width="3" />
-    </svg>
-    <svg class="dz-castle" viewBox="0 0 300 120" aria-hidden="true">
-      <path d="M20,120 V70 h14 V56 h10 V70 h20 V44 h6 l6-10 6,10 h6 V70 h20 V56 h10 V70 h14 v-6 h18 V50 l10-14 10,14 v14 h18 v50 Z" fill="#0a0e2a" stroke="#26306f" stroke-width="1.5"/>
-    </svg>
-    <div class="dz-boot-txt">Mohamed <span>Originals</span></div>
-  </div>
-</div>
-
 <canvas id="disneyStars" class="fx dz-stars" aria-hidden="true"></canvas>
 
 <header class="dz-billboard">
   <div class="dz-billboard-inner">
-    <p class="dz-kicker rv">✦ {t.copy.kicker} ✦</p>
-    <div class="dz-wordmark rv" data-float set:html={WORDMARKS.disney}></div>
-    <p class="dz-banner rv">{profile.identity.tagline}</p>
-    <p class="dz-logline rv">{t.copy.lede}</p>
-    <div class="dz-rating rv"><span class="dz-stars-row">✦✦✦✦✦</span> · {profile.heroLine}</div>
-    <div class="dz-cta rv">
+    <div class="dz-intro" data-calm-block="identity">
+      <p class="dz-kicker rv">✦ {t.copy.kicker} ✦</p>
+      <div class="dz-wordmark rv" data-float set:html={WORDMARKS.disney}></div>
+      <h1 class="dz-banner rv">{profile.identity.tagline}</h1>
+      <p class="dz-logline rv">{t.copy.lede}</p>
+    </div>
+    <div class="dz-rating rv" data-calm-block="proof"><span class="dz-stars-row">✦✦✦✦✦</span> · {profile.heroLine}</div>
+    <div class="dz-cta rv" data-calm-block="actions">
       <a class="dz-btn play" href="#dz-originals">▶ Play</a>
       <a class="dz-btn add" href={`mailto:${profile.identity.contact.email}`}>+ Watchlist</a>
     </div>
@@ -122,11 +111,6 @@ const covers = ['#1a3a8a', '#7a3f9e', '#c78a2a', '#2a7a8a', '#8a2a5a', '#3a5aaa'
   .dz-cover--series { height: 132px; }
   .dz-orig-badge { align-self: flex-start; font-family: 'Mulish'; font-weight: 700; font-size: 10px; letter-spacing: .12em; color: #0a0e2a; background: #E8C87A; padding: 2px 8px; border-radius: 4px; }
   .dz-cover-role { font-family: 'Cinzel', serif; font-weight: 700; color: #fff; font-size: 20px; text-shadow: 0 2px 12px rgba(0,0,0,.5); }
-  /* gold shimmer-swipe on reveal */
-  .dz-poster.in .dz-cover::after, .dz-series.in .dz-cover::after {
-    content: ""; position: absolute; top: 0; left: -70%; width: 60%; height: 100%;
-    background: linear-gradient(100deg, transparent, rgba(232,200,122,.65), transparent); animation: gm-shim 1.1s ease .1s forwards; }
-  @keyframes gm-shim { to { left: 130%; } }
   .dz-poster-body { padding: 16px 18px 18px; }
   .dz-poster-body h3 { font-family: 'Cinzel', serif; font-weight: 700; color: #f5f7ff; font-size: 16px; margin-bottom: 6px; line-height: 1.25; }
   .dz-star { color: #E8C87A; }
@@ -139,7 +123,6 @@ const covers = ['#1a3a8a', '#7a3f9e', '#c78a2a', '#2a7a8a', '#8a2a5a', '#3a5aaa'
   @media (prefers-reduced-motion: reduce) {
     .dz-stars, .dz-fw { display: none !important; }
     .dz-arc-path, .dz-castle, .dz-boot-txt { animation: none !important; opacity: 1; stroke-dashoffset: 0; }
-    .dz-poster.in .dz-cover::after, .dz-series.in .dz-cover::after { display: none; }
   }
 </style>
 
