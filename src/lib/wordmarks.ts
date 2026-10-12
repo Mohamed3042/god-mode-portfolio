@@ -1,5 +1,5 @@
 /**
- * wordmarks.ts — the 5 MOHAMED wordmarks (+ a hub mark), inline & themeable.
+ * wordmarks.ts — the 7 MOHAMED wordmarks (+ a hub mark), inline & themeable.
  * These are ORIGINAL marks styled in each brand's aesthetic — NOT lifted logos.
  * Background rects from the source SVGs are stripped so each sits on its theme bg.
  * Every mark spells MOHAMED. Never the company name.

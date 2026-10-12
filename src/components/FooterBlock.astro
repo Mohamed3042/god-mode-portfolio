@@ -1,8 +1,9 @@
 ---
 import { profile } from '../data/profile';
+import packageJson from '../../package.json';
 const { footer } = profile;
 ---
 <footer class="gm-footer">
-  <div>{footer.line}</div>
-  <div style="opacity:.75">{footer.tribute}</div>
+  <div>{footer.line} · <strong>v{packageJson.version}</strong></div>
+  <div>{footer.tribute}</div>
 </footer>

@@ -16,14 +16,6 @@ const orbs = [
   { x: 2, y: 62, s: 340, c: 'rgba(120,200,255,.15)', d: 20, dl: -7 },
 ];
 ---
-<div id="gm-boot" data-theme="apple" data-dur="1700" style="background:#000">
-  <div class="ap-boot-spot" aria-hidden="true"></div>
-  <div class="ap-boot-in">
-    <div class="ap-boot-mark" set:html={WORDMARKS.apple}></div>
-    <div class="ap-boot-tag">Think Different</div>
-  </div>
-</div>
-
 <div class="fx ap-orbs" aria-hidden="true">
   {orbs.map((o) => (
     <div style={`left:${o.x}%;top:${o.y}%;width:${o.s}px;height:${o.s}px;background:radial-gradient(circle,${o.c},transparent 68%);animation-duration:${o.d}s;animation-delay:${o.dl}s`}></div>
@@ -33,14 +25,16 @@ const orbs = [
 <main class="ap-wrap">
   <!-- hero / keynote -->
   <section class="ap-hero">
-    <div class="ap-wordmark rv" set:html={WORDMARKS.apple}></div>
-    <h1 class="ap-head rv">A whole marketing team.<br><span class="ap-grad">In one hire.</span></h1>
-    <p class="ap-sub rv">{t.copy.lede}</p>
-    <div class="ap-links rv">
+    <div class="ap-intro" data-calm-block="identity">
+      <div class="ap-wordmark rv" set:html={WORDMARKS.apple}></div>
+      <h1 class="ap-head rv">A whole marketing team.<br><span class="ap-grad">In one hire.</span></h1>
+      <p class="ap-sub rv">{t.copy.lede}</p>
+    </div>
+    <div class="ap-links rv" data-calm-block="actions">
       <a href="#ap-builds">{t.copy.cta1}</a>
       <a href="#ap-team">{t.copy.cta2}</a>
     </div>
-    <div class="ap-keynote rv" data-reveal>
+    <div class="ap-keynote rv" data-calm-block="proof">
       <div class="ap-keynote-orb" aria-hidden="true"></div>
       <div class="ap-keynote-num">{profile.heroStats[0].value}<sup>*</sup></div>
       <div class="ap-keynote-line">{profile.heroLine}</div>

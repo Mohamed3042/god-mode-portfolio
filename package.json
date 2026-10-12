@@ -1,21 +1,23 @@
 {
   "name": "god-mode-portfolio",
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "God Mode — one portfolio, five brand-styled skins. Mohamed Mahmoud.",
+  "description": "God Mode — one portfolio, seven identity-driven worlds. Mohamed Mahmoud.",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "verify:calm": "node scripts/verify-calm.mjs"
   },
   "dependencies": {
     "astro": "^5.6.1"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
+    "lighthouse": "13.4.1",
     "typescript": "^5.7.3"
   }
 }
